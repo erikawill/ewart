@@ -37,8 +37,6 @@ background-color: rgb(234, 234, 234);
 .hellokitty-main-content-wrapper,
 .hellokitty-footer-wrapper {
   max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .hellokitty-logo {
