@@ -47,10 +47,16 @@ background-color: rgb(234, 234, 234);
   width: 1450px;
 }
 
-.hellokitty-intro{
+.hellokitty-intro,
+.hellokitty-main-content,
+.hellokitty-main-nav{
   font-family: 'Roboto', sans-serif;
 }
 
+.hellokitty-main-nav{
+  display:flex;
+  justify-content: flex-end;
+}
 .hellokitty-header {
   display: flex;
   justify-content: space-between;
