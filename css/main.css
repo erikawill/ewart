@@ -77,3 +77,15 @@ background-color: rgb(234, 234, 234);
 .hellokitty-main-nav a:hover {
   color: black;
 }
+
+.hellokitty-about-wrapper,
+.hellokitty-about,
+.hellokitty-about-content-wrapper,
+.hellokitty-about-content,
+.hellokitty-skills-wrapper,
+.hellokitty-skills,
+.hellokitty-skills-content-wrapper,
+.hellokitty-skills-content{
+  display: flex;
+  justify-content: center;
+}
