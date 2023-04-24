@@ -37,19 +37,25 @@ background-color: rgb(224, 229, 233);
 .hellokitty-main-content-wrapper,
 .hellokitty-footer-wrapper {
   max-width: 800px;
-  body {
-    margin:0;
-    padding:0;
-    background: #ebebeb;
-  }
+  margin-left: auto;
+  margin-right: auto;
+  margin:0;
+  padding:0;
+}
+
+.hellokitty-footer-wrapper{
+  padding-top: 32px;
+  border-top: 1px solid black;
+  margin-top: 32px;
+}
+
+.hellokitty-footer{
+  display: flex;
+  justify-content: space-between;
 }
 
 .hellokitty-logo {
   width: 130px;
-}
-
-.hellokitty-border {
-  width: 1440px;
 }
 
 .hellokitty-intro,
@@ -59,7 +65,9 @@ background-color: rgb(224, 229, 233);
 }
 
 .hellokitty-main-nav{
-  display:flex;
+  display: flex;
+  gap: 16px;
+  display: flex;
   justify-content: flex-end;
 }
 
@@ -68,11 +76,6 @@ background-color: rgb(224, 229, 233);
   justify-content: space-between;
   align-items: center;
   margin-bottom: 32px;
-}
-
-.hellokitty-main-nav {
-  display: flex;
-  gap: 16px;
 }
 
 .hellokitty-main-nav a {
@@ -109,41 +112,5 @@ background-color: rgb(224, 229, 233);
 
 .hippo-main-nav{
   display: flex;
-  justify-content: flex-end;
-}
-
-.button-container {
-  width: 520px;
-  overflow-y: auto;
-}
-
-.button-container > a {
-  width: 100px;
-  height: 100px;
-  float: left;
-  background: lightgray;   
-  margin: 15px;
-}
-
-.container {
-  display: grid;
-  grid-template-columns: 100px 100px 100px;
-  grid-template-rows: auto;
-
-  box-sizing: border-box;
-  width: 400px;
-  height: 200px;
-  margin-left: auto;
-  margin-right: auto;
-
-  background: rgba(114, 186, 94, 0.05);
-  border: 2px dashed rgba(114, 186, 94, 0.35);
-}
-
-.item {
-  box-sizing: border-box;
-  width: 50px;
-  height: 50px;
-  //background: rgba(255, 213, 70, 0.4);
- // border: 2px dashed rgba(236, 198, 48, 0.5);
+ flex-direction: column;
 }
