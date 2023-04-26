@@ -15,6 +15,11 @@ background-color: rgb(224, 229, 233);
   font-family: 'Roboto', sans-serif;
 }
 
+img {
+  width: 256px;
+  height: auto;
+}
+
 .sbutton:hover{
   background-color: white;
       }
@@ -39,8 +44,8 @@ background-color: rgb(224, 229, 233);
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
-  margin:0;
-  padding:0;
+  margin: 2px;;
+  padding: 2px;;
 }
 
 .hellokitty-footer-wrapper{
@@ -66,9 +71,10 @@ background-color: rgb(224, 229, 233);
 
 .hellokitty-main-nav{
   display: flex;
-  gap: 16px;
-  display: flex;
   justify-content: flex-end;
+  gap: 16px;
+  margin: 2px;;
+  padding: 2px;;
 }
 
 .hellokitty-header {
@@ -87,31 +93,40 @@ background-color: rgb(224, 229, 233);
   color: black;
 }
 
-.hellokitty-about-wrapper,
-.hellokitty-about,
+.hellokitty-about-intro,
 .hellokitty-about-content-wrapper,
-.hellokitty-about-content,
-.hellokitty-skills-wrapper,
-.hellokitty-skills,
-.hellokitty-skills-content-wrapper,
-.hellokitty-skills-content{
+.hellokitty-about-content{
   display: flex;
   justify-content: center;
 }
 
-.hippo-header-wrapper,
-.hippo-header{
-
-}
-
-.hippo-main-nav{
-  display: flex;
-  gap: 16px;
-  font-family: 'Roboto', sans-serif;
-}
 
 
 /*Buttons*/
+.box {
+  display: grid;
+  width: 540px;
+  grid-template-columns: 120px 120px 120px;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.box :first-child {
+    align-self: center;
+}
+
+
+.hippo-main-nav1{
+  display: flex;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.hippo-main-nav2{
+  display: flex;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+}
 
 .btn-group1 button {
   background-color: #0441aa; /* blue background */
@@ -121,6 +136,7 @@ background-color: rgb(224, 229, 233);
   transition:all .5s ease-in-out;
   background:white;
   color:#040e5a;
+  gap: 16px;
 }
 
 .btn-group1 button:not(:last-child) {
@@ -147,6 +163,7 @@ background-color: rgb(224, 229, 233);
   transition:all .5s ease-in-out;
   background:white;
   color:#040e5a;
+  gap: 16px;
 }
 
 .btn-group2 button:not(:last-child) {
@@ -169,7 +186,7 @@ background-color: rgb(224, 229, 233);
 body {
   margin: 0;
   padding: 0;
-  background-color: #000;
+  //background-color: #000;
   padding-bottom: 100px;
 }
 
@@ -420,4 +437,27 @@ hr {
   .send-button {
     width: 99%;
   }
+}
+
+/*Social Media Icons*/
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-instagram {  
+  background: #125688;  
+  color: white;  
+}  
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
 }
