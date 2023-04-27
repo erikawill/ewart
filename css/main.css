@@ -95,10 +95,15 @@ img {
 
 .hellokitty-about-intro,
 .hellokitty-about-content-wrapper,
-.hellokitty-about-content{
+.hellokitty-about-content,
+.hellokitty-skills-wrapper,
+.hellokitty-skills,
+.hellokitty-skills-content-wrapper,
+.hellokitty-skills-content{
   display: flex;
   justify-content: center;
 }
+
 
 
 
@@ -116,191 +121,421 @@ img {
 }
 
 
-.hippo-main-nav1{
+hippo-main-nav1{
   display: flex;
   justify-content: center;
   font-family: 'Roboto', sans-serif;
 }
 
-.hippo-main-nav2{
+hippo-main-nav2{
   display: flex;
   justify-content: center;
   font-family: 'Roboto', sans-serif;
 }
 
-.btn-group1 button {
+btn-group1 button {
   background-color: #0441aa; /* blue background */
   border: 1px solid #040caa; /* blue border */
   color: white; /* White text */
-  padding: 42px 64px; /* Some padding */
+  padding: 62px 84px; /* Some padding */
   transition:all .5s ease-in-out;
   background:white;
   color:#040e5a;
   gap: 16px;
 }
 
-.btn-group1 button:not(:last-child) {
+btn-group1 button:not(:last-child) {
   border-right: none; /* Prevent double borders */
 }
 
 /* Clear floats (clearfix hack) */
-.btn-group1:after {
+btn-group1:after {
   content: "";
   clear: both;
   display: table;
 }
 
 /* Add a background color on hover */
-.btn-group1 button:hover {
+btn-group1 button:hover {
   background-color: #0441aa;
 }
 
-.btn-group2 button {
+btn-group2 button {
   background-color: #0441aa; /* blue background */
   border: 1px solid #040caa; /* blue border */
   color: white; /* White text */
-  padding: 42px 64px; /* Some padding */
+  padding: 62px 84px; /* Some padding */
   transition:all .5s ease-in-out;
   background:white;
   color:#040e5a;
   gap: 16px;
 }
 
-.btn-group2 button:not(:last-child) {
+btn-group2 button:not(:last-child) {
   border-right: none; /* Prevent double borders */
 }
 
 /* Clear floats (clearfix hack) */
-.btn-group2:after {
+btn-group2:after {
   content: "";
   clear: both;
   display: table;
 }
 
 /* Add a background color on hover */
-.btn-group2 button:hover {
+btn-group2 button:hover {
   background-color: #0441aa;
 }
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 100px, 100px, 100px;
+  padding: 10px;
+}
+.grid-item {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.column {
+  flex: 100%;
+  max-width: 100%;
+}
+.column img {
+  vertical-align: middle;
+}
+.container {
+  position: relative;
+  width: 100%;
+}
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgb(255, 255, 255);
+}
+.container:hover .overlay {
+  opacity: 0.8;
+}
+.text {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+/* Tablet Styles */
+@media only screen and (min-width: 480px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+
+/* Desktop Styles */
+@media only screen and (min-width: 1024px) {
+  .column {
+    flex: 33.3%;
+    max-width: 33.3%;
+  }
+}
+
+
+
+
+
+
 
 /*Contact Info*/
+* {
+  box-sizing: border-box;
+}
+
 body {
-  margin: 0;
+  //background: #92bde7;
+  color: #485e74;
+  line-height: 1.6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 1em;
+}
+
+.container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+}
+
+ul {
+  list-style: none;
   padding: 0;
-  //background-color: #000;
-  padding-bottom: 100px;
 }
 
-#contact {
-  width: 100%;
-  height: 100%;
-}
-
-.section-header {
+.brand {
   text-align: center;
-  margin: 0 auto;
-  padding: 40px 0;
-  font: 300 60px 'Oswald', sans-serif;
+}
+
+.brand span {
   color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 6px;
 }
 
-.contact-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 0 auto;
-  padding: 20px;
-  position: relative;
-  max-width: 840px;
+.wrapper {
+  box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
 }
 
-/* Left contact page */
-.form-horizontal {
-  /*float: left;*/
-  max-width: 400px;
-  font-family: 'Lato';
-  font-weight: 400;
+.wrapper>* {
+  padding: 1em;
 }
 
-.form-control, 
-textarea {
-  max-width: 400px;
-  background-color: #000;
-  color: #fff;
-  letter-spacing: 1px;
+.company-info {
+  background: #c9e6ff;
 }
 
-.send-button {
-  margin-top: 15px;
-  height: 34px;
-  width: 400px;
-  overflow: hidden;
-  transition: all .2s ease-in-out;
+.company-info h3,
+.company-info ul {
+  text-align: center;
+  margin: 0 0 1rem 0;
 }
 
-.alt-send-button {
-  width: 400px;
-  height: 34px;
-  transition: all .2s ease-in-out;
+.contact {
+  background: #f9feff;
 }
 
-.send-text {
+/* Form Styles */
+
+.contact form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.contact form label {
   display: block;
-  margin-top: 10px;
-  font: 700 12px 'Lato', sans-serif;
-  letter-spacing: 2px;
 }
 
-.alt-send-button:hover {
-  transform: translate3d(0px, -29px, 0px);
+.contact form p {
+  margin: 0;
 }
 
-/* Begin Right Contact Page */
-.direct-contact-container {
-  max-width: 400px;
+.contact form .full {
+  grid-column: 1/3;
 }
 
-/* Location, Phone, Email Section */
-.contact-list {
-  list-style-type: none;
-  margin-left: -30px;
-  padding-right: 20px;
+.contact form button,
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  padding: 1em;
+  border: 1px solid #c9e6ff;
 }
 
-.list-item {
-  line-height: 4;
-  color: #aaa;
+.contact form button {
+  background: #c9e6ff;
+  border: 0;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
-.contact-text {
-  font: 300 18px 'Lato', sans-serif;
-  letter-spacing: 1.9px;
-  color: #bbb;
-}
-
-.place {
-  margin-left: 62px;
-}
-
-.phone {
-  margin-left: 56px;
-}
-
-.gmail {
-  margin-left: 53px;
-}
-
-.contact-text a {
-  color: #bbb;
-  text-decoration: none;
-  transition-duration: 0.2s;
-}
-
-.contact-text a:hover {
+.contact form button:hover,
+.contact form butto:focus {
+  background: #92bde7;
   color: #fff;
-  text-decoration: none;
+  outline: 0;
+  transition: background-color 1.5s ease-out;
 }
+
+.alert {
+  text-align: center;
+  padding: 10px;
+  background: #79c879;
+  color: #fff;
+  margin-bottom: 10px;
+  display: none;
+}
+
+/* responsive css for larger screeens */
+
+@media(min-width:700px) {
+  .wrapper {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+  }
+  .wrapper>* {
+      padding: 2em;
+  }
+  .company-info h3,
+  .company-info ul,
+  .brand {
+      text-align: left;
+  }
+}
+
+
+
+
+
+
+
+
+/* Social Media Icons */
+.social-media-list {
+  position: relative;
+  font-size: 22px;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.social-media-list li a {
+  color: #fff;
+}
+
+.social-media-list li {
+  position: relative; 
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  margin: 10px 3px;
+  line-height: 60px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: rgb(27,27,27);
+  cursor: pointer; 
+  transition: all .2s ease-in-out;
+}
+
+.social-media-list li:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0 0 0 1px #fff;
+  transition: all .2s ease-in-out;
+}
+
+.social-media-list li:hover {
+  background-color: #fff; 
+}
+
+.social-media-list li:hover:after {
+  opacity: 1;  
+  transform: scale(1.12);
+  transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
+}
+
+.social-media-list li:hover a {
+  color: #000;
+}
+
+.copyright {
+  font: 200 14px 'Oswald', sans-serif;
+  color: #555;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+hr {
+  border-color: rgba(255,255,255,.6);
+}
+
+/* Begin Media Queries*/
+@media screen and (max-width: 850px) {
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .direct-contact-container, .form-horizontal {
+    margin: 0 auto;
+  }  
+  
+  .direct-contact-container {
+    margin-top: 60px;
+    max-width: 300px;
+  }    
+  .social-media-list li {
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+  }
+  .social-media-list li:after {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+  }
+}
+
+@media screen and (max-width: 569px) {
+
+  .direct-contact-container, .form-wrapper {
+    float: none;
+    margin: 0 auto;
+  }  
+  .form-control, textarea {
+    
+    margin: 0 auto;
+  }
+ 
+  
+  .name, .email, textarea {
+    width: 280px;
+  } 
+  
+  .direct-contact-container {
+    margin-top: 60px;
+    max-width: 280px;
+  }  
+  .social-media-list {
+    left: 0;
+  }
+  .social-media-list li {
+    height: 55px;
+    width: 55px;
+    line-height: 55px;
+    font-size: 2rem;
+  }
+  .social-media-list li:after {
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+  }
+  
+}
+
+@media screen and (max-width: 410px) {
+  .send-button {
+    width: 99%;
+  }
+}
+
 
 
 /* Social Media Icons */
@@ -460,4 +695,122 @@ hr {
 .fa-twitter {
   background: #55ACEE;
   color: white;
+}
+
+
+
+/*GD Images*/
+.hellokitty-gd-list {
+  padding-left: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-gap: 4px;
+}
+
+@media (max-width: 999px) {
+  .hippocampus-gd-list {
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+}
+
+.hellokitty-gd-list a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  filter: grayscale(.5);
+  text-decoration: none;
+  
+}
+
+
+.hellokitty-gd-list a:hover {
+  filter: grayscale(0);
+}
+
+.hellokitty-gd-list p {
+  font-size: 20px;
+}
+
+
+/*
+  The grid itself needs only 4 CSS declarations:
+*/
+
+.myGallery {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.myGallery img {
+  width: 100%;
+}
+
+/*
+  And here are some declarations for the image caption.
+  Just hover over one of the last 5 images to see it.
+*/
+
+.myGallery .item {
+  position: relative;
+  overflow: hidden;
+}
+
+.myGallery .item img {
+  vertical-align: middle;
+}
+
+.myGallery .caption {
+  margin: 0;
+  padding: 1em;
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  max-height: 100%;
+  overflow: auto;
+  box-sizing: border-box;
+  transition: transform 0.5s;
+  transform: translateY(100%);
+  background: rgba(0, 0, 0, 0.7);
+  color: rgb(255, 255, 255);
+}
+
+.myGallery .item:hover .caption {
+  transform: translateY(0%);
+}
+
+/*
+  The rest is only styling for this example page
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;900&display=swap");
+
+
+.myGallery {
+  font-size: 1rem;
+  font: 400 1.5em/1.58 Vollkorn, serif;
+  text-align: center;
+}
+
+
+.silly-ghosts{
+font-size: 18px;
+}
+
+.word1,
+.word2 {
+display: flex;
+justify-content: center;
+font-size: 20px;
+}
+
+/*Resume*/
+.hellokitty-resume {
+  height: auto;
+  width: 500px;
+  display: block;
+  margin: 0 auto;
 }
