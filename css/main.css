@@ -1,6 +1,6 @@
 /* Place CSS styles here */
 body{
-  background-color: rgb(225, 241, 255);
+  background-color: #2E3233;
   background-attachment: fixed;
   background-position: center;
   height: 100%;
@@ -40,7 +40,7 @@ body{
 /* FOOTER */
 .hellokitty-footer-wrapper{
   padding-top: 32px;
-  border-top: 1px solid black;
+  border-top: 1px solid #416794;
   margin-top: 32px;
   max-width: 800px;
   margin-left: auto;
@@ -55,6 +55,7 @@ body{
 .hellokitty-footer{
   display: flex;
   justify-content: space-between;
+  color: #6f8297;
 }
 
 /* LOGO */
@@ -97,24 +98,6 @@ hellokitty-main-content{
   font-weight: 400;
 }
 
-h2.title {
-  position: relative;
-  margin-bottom: 15px;
-  padding-bottom: 15px;
-  font-size: 30px;
-  color: #222222;
-}
-
-h2.title::after {
-  position: absolute;
-  content: "";
-  width: 50px;
-  height: 3px;
-  left: calc(50% - 25px);
-  bottom: 0;
-  background: #222222;
-}
-
 p {
   position: relative;
   margin: 15px auto;
@@ -132,8 +115,7 @@ p {
   letter-spacing: 1px;
   text-decoration: none;
   color: #6f8297;
-  //background: #ffffff;
-  //border: 3px solid #999999;
+  border: 3px solid
   cursor: pointer;
   transition: ease-out 0.5s;
   -webkit-transition: ease-out 0.5s;
@@ -190,6 +172,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
+  //gap: 10px;
 }
 .column {
   flex: 100%;
@@ -225,6 +208,7 @@ p {
 .text {
   color: rgb(0, 0, 0);
   font-size: 20px;
+  font-family: 'Mitr', sans-serif;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -262,13 +246,14 @@ p {
 
 .myGallery {
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 4px;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
 .myGallery img {
-  width: 95%;
-  height: 85%;
+  width: 100%;
+  height: 95%;
+  display: block;
 }
 
 /*
@@ -294,6 +279,7 @@ p {
   left: 0;
   width: 100%;
   max-height: 100%;
+  font-size: 18px;
   overflow: auto;
   box-sizing: border-box;
   transition: transform 0.5s;
@@ -310,29 +296,36 @@ p {
   The rest is only styling for this example page
 */
 
-@import url("https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;900&display=swap");
 
-body {
-  font: 400 1.5em/1.58 Vollkorn, serif;
-}
-
-h1,
 p {
   text-align: center;
+  font-size: 22px;
+  color: white;
 }
 
 .myGallery {
-  font-size: 1rem;
+  font-size: 3rem;
 }
 
 
 
 /*Graphic Design*/
-
-
-.postcard{
-  font-size: 30px;
+.item-postcard{
+  height: 45%;
+  width: 100%;
 }
+
+.item-stamp{
+  height: 85%;
+  width: 75%;
+}
+
+
+.item-card{
+  height: 65%;
+  width: 100%;
+}
+
 
 /*Animation*/
 .silly-ghosts,
@@ -372,6 +365,12 @@ font-size: 22px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+/*About*/
+item-pizza{
+  width: 750px;
+  height: auto;
 }
 
 
