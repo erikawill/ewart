@@ -1,6 +1,6 @@
 /* Place CSS styles here */
 body{
-  background-color: #2E3233;
+  background-color: #303232;
   background-attachment: fixed;
   background-position: center;
   height: 100%;
@@ -38,7 +38,7 @@ body{
 /* FOOTER */
 .hellokitty-footer-wrapper{
   padding-top: 32px;
-  border-top: 1px solid #416794;
+  border-top: 1px solid #4189dc;
   margin-top: 32px;
   max-width: 800px;
   margin-left: auto;
@@ -53,7 +53,7 @@ body{
 .hellokitty-footer{
   display: flex;
   justify-content: space-between;
-  color: #6f8297;
+  color: #f0f0f0;
 }
 
 /* LOGO */
@@ -120,7 +120,7 @@ p {
   font-size: 18px;
   letter-spacing: 1px;
   text-decoration: none;
-  color: #6f8297;
+  color: #f0f0f0;
   border: 10px 
   cursor: pointer;
   transition: ease-out 0.5s;
@@ -151,17 +151,17 @@ p {
 }
 
 .btn.btn-border-5:hover {
-  color: #607996;
+  color: #4189dc;
 }
 
 .btn.btn-border-5:hover::after,
 .btn.btn-border-5:hover::before {
   width: 100%;
   height: 100%;
-  border-color: #376489;
+  border-color: #4189dc;
 }
 
-/* BUTTONS */
+/* BUTTONS FOR PORTFOLIO PAGE*/
 .grid-container {
   display: grid;
   grid-template-columns: 100px, 100px, 100px;
@@ -169,7 +169,7 @@ p {
 }
 .grid-item {
   padding: 20px;
-  font-size: 30px;
+  font-size: 20px;
   text-align: center;
 }
 
@@ -321,6 +321,64 @@ p {
 }
 
 
+/*Frames for Drawings*/
+.frame {
+  position: relative;
+  width: 100%;
+  padding-bottom: 82.5%;
+  background: black;
+  box-shadow: 0 10px 7px -5px rgba(0, 0, 0, 0.3);
+}
+
+.mat {
+  position: absolute;
+  background: white;
+  top: 3.0303%; bottom: 3.0303%; left: 2.5%; right: 2.5%;
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5) inset;
+}
+
+.art {
+  position: absolute;
+  top: 16.129%; bottom: 16.129%; left: 13.158%; right: 13.158%;
+}
+
+.art img {
+  width: 100%;
+}
+
+
+
+label{
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  box-sizing: border-box;
+  box-sizing: content-box;
+  padding: 0;
+  margin: 0;
+  font-size: 5px;
+  font-weight: bold;
+  color: #444;
+  text-align: left;
+  cursor: -webkit-zoom-in;
+}
+
+
+.art:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5) inset;
+}
+
+
+/*Frames for Photography*/
+
 
 /*Graphic Design*/
 .item-postcard{
@@ -345,7 +403,8 @@ p {
   font-family: 'Mitr', sans-serif;
   color: white;
   font-size: 20px;
-
+  border-top: 1px solid #416794;
+  border-bottom: 1px solid #416794;
 }
 
 /*Animation*/
@@ -363,7 +422,7 @@ font-size: 22px;
 }
 
 /* Photography */
-park,
+.park,
 .lights-out,
 .flowers,
 .levee,
@@ -371,7 +430,9 @@ park,
   display: flex;
   justify-content: center;
   font-size: 16px;
+  font-family: 'Mitr', sans-serif;
 }
+
 
 .item-frame{
   width: 45%;
