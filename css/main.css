@@ -164,7 +164,7 @@ p {
   border-color: #4189dc;
 }
 
-/* BUTTONS FOR PORTFOLIO PAGE*/
+/* Buttons For School Page*/
 .grid-container {
   display: grid;
   grid-template-columns: 100px, 100px, 100px;
@@ -180,15 +180,15 @@ p {
 .row {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 4px;
-  //gap: 1px;
+  padding: 0 3px;
+  //gap: 5px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 .column {
   flex: 100%;
   max-width: 100%;
-  gap: 3px;
+  //gap: 1px;
 }
 .column img {
   vertical-align: middle;
@@ -350,6 +350,17 @@ label{
 
 
 /*Animation*/
+.animation-intro {
+  display: flex;
+  justify-content: center;
+  font-family: 'Mitr', sans-serif;
+  color: white;
+  font-size: 20px;
+  border-top: 5px solid #416794;
+  border-bottom: 5px solid #416794;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
 .item-ultrabulk,
 .item-ghosts{
   display: flex;
@@ -470,8 +481,10 @@ font-size: 22px;
   font-family: 'Mitr', sans-serif;
   color: white;
   font-size: 20px;
-  border-top: 1px solid #416794;
-  border-bottom: 1px solid #416794;
+  border-top: 5px solid #416794;
+  border-bottom: 5px solid #416794;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 
