@@ -8,10 +8,170 @@ body{
   background-size: cover;
 }
 
-.sbutton:hover{
-  background-color: white;
-      }
+/*Header*/
+.home-wrapper {
+  max-width: 800px;
+  display: block;
+  -webkit-text-size-adjust: 100%;
+}
+.home-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -webkit-text-size-adjust: 100%;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 25px;
+}
 
+.hellokitty-header-wrapper,
+.hellokitty-main-content-wrapper{
+  //max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  //margin: 2px;
+  padding: 10px;
+}
+
+.hellokitty-logo {
+  width: 100px;
+  height: auto;
+  padding: 20px;
+}
+/*Home Buttons + Logo*/
+.logo {
+  width: 100px;
+  height: auto;
+  padding: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.left-nav {
+  overflow: hidden;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.left-nav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+
+}
+.left-nav a:hover {
+  //background-color: #ddd;
+  color: black;
+  border-bottom: 3px solid gray;
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+nav {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.btn {
+  display: inline-block;
+}
+.btn>li {
+  float: right;
+  color: #e298e1;
+  width: 140px;
+  height: 40px;
+  line-height: 40px;
+  background: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  font-size: 20px;
+}
+.sub-btn {
+  transform: scale(0);
+  transform-origin: top center;
+  transition: all 300ms ease-in-out;
+}
+.sub-btn li {
+  font-size: 16px;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 8px 0;
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  transform: scale(0);
+  transform-origin: top center;
+  transition: all 300ms ease-in-out;
+}
+.sub-btn li:last-child {
+  border-bottom: 0;
+}
+.sub-btn li:hover {
+  background: black;
+}
+.btn>li:hover .sub-btn {
+  transform: scale(1);
+}
+
+/*Container*/
+.btn-nav {
+  overflow: hidden;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  float: right;
+}
+/*Links inside Container [nav bar]*/
+.btn-nav a {
+  font-size: 16px;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/*Dropdown Container*/
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+/*Dropdown Buttons*/
+.dropdown .dropbtn {
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+/*Add a background color to navbar links on hover*/
+.btn-nav a:hover, .dropdown:hover .dropbtn {
+  background-color: #4189dc;
+}
+/*Dropdown content that's hidden by default*/
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+/*Links inside the dropdown*/
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+/*Background color to dropdown links*/
+.dropdown-content a:hover {
+  background-color: #4d5050;
+}
+/*Shows dropdown menu on hover*/
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 .sr-only {
   position: absolute;
   width: 1px;
@@ -25,17 +185,7 @@ body{
   border: 0;
 }
 
-/* HEADER */
-.hellokitty-header-wrapper,
-.hellokitty-main-content-wrapper{
-  //max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  //margin: 2px;
-  padding: 10px;
-}
-
-/* FOOTER */
+/* Footer */
 .hellokitty-footer-wrapper{
   padding-top: 32px;
   border-top: 1px solid #4189dc;
@@ -50,17 +200,11 @@ body{
   margin-left: auto;
   margin-right: auto;
 }
-
+/*Copyright + Name*/
 .hellokitty-footer{
   display: flex;
   justify-content: space-between;
   color: #f0f0f0;
-}
-
-/* LOGO */
-.hellokitty-logo {
-  width: 75px;
-  margin-left: 10px;
 }
 
 .hellokitty-intro{
@@ -69,6 +213,7 @@ body{
   font-family: 'Mitr', sans-serif;
   color: white;
   font-size: 50px;
+  margin-top: 100px;
 }
 
 school-intro{
