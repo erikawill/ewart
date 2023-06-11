@@ -1,11 +1,6 @@
 /* Place CSS styles here */
 body{
   background-color: #4d5050;
-  //background-attachment: fixed;
-  //background-position: center;
-  //height: 100%;
-  //background-repeat: no-repeat;
-  //background-size: cover;
 }
 
 /*Header*/
@@ -373,25 +368,32 @@ label{
   cursor: -webkit-zoom-in;
 }
 
+/*Info*/
+.details {
+  //float: left;
+  padding: 20px;
+  background-color: #333;
+  border: #333 1px solid;
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
 
 /*Animation*/
-.animation-intro {
+.invest-intro {
   display: flex;
   justify-content: center;
-  font-family: 'Mitr', sans-serif;
   color: white;
   font-size: 20px;
-  //border-top: 5px solid #416794;
-  //border-bottom: 5px solid #416794;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-top: 15px;
   margin-bottom: 15px;
 }
-.item-ultrabulk,
-.item-ghosts{
+.item-ultrabulk {
   display: flex;
   justify-content: center;
 }
-
 .word1,
 .word2 {
 display: flex;
@@ -458,60 +460,156 @@ font-size: 22px;
   box-shadow: 0 10px 7px -5px rgba(0, 0, 0, 0.3);
 }
 
-/* Cards for Drawings
-.grid-card-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  background-color: white;
-  padding: 5px;
-  margin-top: 15px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-.grid-card-item {
-  padding: 10px;
-  font-size: 10px;
-  text-align: center;
-}
-.card-box{
-  background: black;
-}
-
-.card-box-draw{
-  background: black;
-}
-*/
 
 
 /*Graphic Design*/
-.item-postcard{
-  height: 45%;
-  width: 100%;
-}
 
-.item-stamp{
-  height: 85%;
-  width: 75%;
-}
-
-
-.item-card{
-  height: 65%;
-  width: 100%;
-}
-
+/*Intro*/
 .gd-intro{
-  display: flex;
-  justify-content: center;
-  font-family: 'Mitr', sans-serif;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
   font-size: 20px;
-  border-top: 5px solid #416794;
-  border-bottom: 5px solid #416794;
+  background-color: #444;
   margin-top: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
+/*Gallery*/
+.gd-gallery {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  margin-bottom: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.gd-gallery img {
+  width: 100%;
+  height: 95%;
+  display: block;
+}
+.gd-gallery .post-img {
+  position: relative;
+  overflow: hidden;
+}
+.gd-gallery .post-img img {
+  vertical-align: middle;
+}
+.gd-gallery .hawaii-img {
+  position: relative;
+  overflow: hidden;
+}
+.gd-gallery .hawaii-img img {
+  vertical-align: middle;
+}
+.gd-gallery .tut-img {
+  position: relative;
+  overflow: hidden;
+}
+.gd-gallery .tut-img img {
+  vertical-align: middle;
+}
+.gd-gallery .poster-img {
+  position: relative;
+  overflow: hidden;
+}
+.gd-gallery .poster-img img {
+  vertical-align: middle;
+}
+.gd-gallery .moodboard-img {
+  position: relative;
+  overflow: hidden;
+}
+.gd-gallery .moodboard-img img {
+  vertical-align: middle;
+}
+
+/*Scroll Gallery*/
+div.scroll-container {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+div.scroll-container img {
+  padding: 10px;
+}
+
+
+/*Motion Graphics*/
+
+/*Intro*/
+.mg-intro {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  font-size: 20px;
+  background-color: #444;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+/*Gallery*/
+.mg-gallery {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  margin-bottom: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.mg-gallery img {
+  width: 100%;
+  height: 95%;
+  display: block;
+}
+.mg-gallery .posh-img {
+  position: relative;
+  overflow: hidden;
+}
+.mg-gallery .posh-img img {
+  vertical-align: middle;
+}
+
+
+.posh {
+  display: flex;
+  justify-content: center;
+}
+.posh-caption {
+  margin: 0;
+  padding: 1em;
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  max-height: 100%;
+  font-size: 18px;
+  overflow: auto;
+  box-sizing: border-box;
+  transition: transform 0.5s;
+  transform: translateY(100%);
+  background: rgba(0, 0, 0, 0.7);
+  color: rgb(255, 255, 255);
+}
+.ghosts {
+  display: flex;
+  justify-content: center;
+  font-size: 22px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.item-ghosts{
+  display: flex;
+  justify-content: center;
+}
 
 /* Photography */
 .myGallery-park-1 {
