@@ -367,6 +367,7 @@ label{
   text-align: left;
   cursor: -webkit-zoom-in;
 }
+/*Page Details*/
 
 /*Info*/
 .details {
@@ -784,8 +785,17 @@ item-crane{
 }
 
 /*About*/
-
-
+.pizza-pic {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+.about-intro {
+  display: flex;
+  justify-content: center;
+  margin-left: 80px;
+  margin-right: 80px;
+}
 
 
 
