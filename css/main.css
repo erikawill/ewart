@@ -21,8 +21,9 @@ body{
 
 /*Home Buttons + Logo*/
 .logo {
-  width: 75px;
-  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .topnav {
   background: linear-gradient(rgba(161, 101, 49, 0.40), rgba(161, 101, 49, 0.40), url(../img/Splat_Border.png));
@@ -135,23 +136,53 @@ active {
 /* Footer */
 .hellokitty-footer-wrapper{
   padding-top: 32px;
-  border-top: 1px solid #4189dc;
+  border-top: 2px solid #4189dc;
   margin-top: 32px;
-  max-width: 800px;
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
-  margin: 400px;
-  margin-bottom: 15px;
+  margin: 300px;
+  margin-bottom: 25px;
   padding: 2px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 /*Copyright + Name*/
 .hellokitty-footer{
   display: flex;
   justify-content: space-between;
   color: #f0f0f0;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+* {
+  box-sizing: border-box;
+}
+.right {
+  width: 15%;
+}
+.left {
+  margin-left: 80px;
+}
+.right {
+  margin-top: 90px;
+}
+.middle {
+  margin-top: 70px;
+  margin-left: 100px;
 }
 
 .hellokitty-intro{
@@ -374,11 +405,12 @@ label{
   //float: left;
   padding: 20px;
   background-color: #333;
-  border: #333 1px solid;
-  font-size: 14px;
+  font-size: 12px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-top: 10px;
   margin-bottom: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 /*Animation*/
@@ -474,6 +506,7 @@ font-size: 22px;
   color: white;
   font-size: 20px;
   background-color: #444;
+  border: 5px solid #444;
   margin-top: 15px;
   margin-bottom: 25px;
 }
@@ -552,6 +585,7 @@ div.scroll-container img {
   color: white;
   font-size: 20px;
   background-color: #444;
+  border: 5px solid #444;
   margin-top: 15px;
   margin-bottom: 25px;
 }
@@ -784,7 +818,14 @@ item-crane{
   margin-right: auto;
 }
 
-/*About*/
+/*Typography*/
+.con {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*About Page*/
 .pizza-pic {
   display: flex;
   justify-content: center;
