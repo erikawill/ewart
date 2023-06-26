@@ -405,7 +405,9 @@ label{
   //float: left;
   padding: 20px;
   background-color: #333;
-  font-size: 12px;
+  border: 8px solid #333;
+  border-radius: 10px;
+  font-size: 15px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-top: 10px;
   margin-bottom: 30px;
@@ -505,8 +507,8 @@ font-size: 22px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
   font-size: 20px;
-  background-color: #444;
-  border: 5px solid #444;
+  //background-color: #444;
+  //border: 5px solid #444;
   margin-top: 15px;
   margin-bottom: 25px;
 }
@@ -515,7 +517,7 @@ font-size: 22px;
 .gd-gallery {
   display: grid;
   grid-gap: 30px;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   margin-bottom: 30px;
   margin-left: 20px;
   margin-right: 20px;
@@ -568,6 +570,7 @@ div.scroll-container {
   overflow: auto;
   white-space: nowrap;
   padding: 10px;
+  margin-bottom: 30px;
 }
 div.scroll-container img {
   padding: 10px;
@@ -584,8 +587,8 @@ div.scroll-container img {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
   font-size: 20px;
-  background-color: #444;
-  border: 5px solid #444;
+  //background-color: #444;
+  //border: 5px solid #444;
   margin-top: 15px;
   margin-bottom: 25px;
 }
