@@ -27,7 +27,7 @@ body{
   padding: 10px;
 }
 .button {
-  border: 1px solid;
+  border: 2px solid;
   color: white;
   padding: 16px 32px;
   text-decoration: none;
@@ -99,73 +99,186 @@ body{
   border: 0;
 }
 
-
-/*HOME BUTTONS*/
-.btn-wrapper {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  padding-left: 0;
-  list-style-type: none;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  grid-gap: 4px;
-  -webkit-text-size-adjust: 100%;
-  max-width: auto;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 200px;
-  margin-bottom: 200px;
+/*HOME INTRO*/
+.intro-wrapper {
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: 10px;
 }
-.main-school {
-
+.intro-heading, 
+.head-intro {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color:  rgb(139, 18, 107);
+  -webkit-text-fill-color: white;
 }
-.main-personal {
-  
+school-home-heading {
+  /grid-column-gap: 1px;
+    /grid-row-gap: 1px;
+    align-items: flex-start;
+    margin-bottom: 2px;
 }
-school-btns, personal-btns {
-  padding-left: 0;
-  list-style-type: none;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  -webkit-text-size-adjust: 100%;
+.text-weight-semibold {
+  color: rgb(139, 18, 107);
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: 10px;
 }
-
-@media (max-width: 999px) {
-  .school-btns, .personal-btns {
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  }
+.school {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color:  rgb(139, 18, 107);
+  -webkit-text-fill-color: white;
+  font-size: 70px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: 10px;
 }
-
-.school-btns a, .personal-btns a {
-  display: flex;
+h2 {
+  color: rgb(139, 18, 107);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 3px;
+  font-weight: 500;
+  line-height: 1;
+}
+.text-size-medium-max-width-large{
+  color: rgb(139, 18, 107);
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: 10px;
+  margin-top: 0;
+  /margin-bottom: 0;
+  font-weight: 500;
+  line-height: 1;
+}
+.school-list {
+  display: block;
+  grid-column-gap: 2px;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2px;
+  grid-row-gap: 4px;
+  column-count: 2;
+  column-rule-width: 0px;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: 20px;
+}
+.school-item {
+  background-color:  rgb(4, 34, 4);
+  border: 3px solid rgb(139, 133, 18);
+  border-radius: 5px;
+  display: inline-block;
+  overflow: hidden;
+}
+.schoo-item-link {
+  height: 100%;
   flex-direction: column;
-  align-items: center;
+  text-direction: none;
+  display: flex;
+}
+.w-inline-block {
+  max-width: 100%;
+}
+.school-image-wrapper {
+  border-radius: 4px;
+}
+.school-image {
+  border-radius: 5px;
+  padding: 6px;
+}
+.school-title-wrapper {
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.school-list-title {
+  font-size: 50px;
+  color:   rgb(139, 18, 107);
+  line-height: 1.2;
+  text-align: center;
+}
+h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.school-title {
+  color:  rgb(255, 255, 255);
+  display: block;
+  font-size: 20px;
+  text-align: center;
+}
+.school-tag-list {
+  grid-column-gap: 0.5px;
+  grid-row-gap: 0.5px;
+  flex-wrap: wrap;
+  margin-top: 1px;
+  display: flex;
+}
+.school-tag-item {
+  background-color: rgba(249, 250, 245, .13);
+  border-radius: 15px;
+  padding: 10px 10.5px;
+  margin-top: 10px;
+  font-size: 20px;
   text-decoration: none;
 }
-
-.school-btns a:hover, .personal-btns a:hover {
-  filter: grayscale(0);
+.school-tag-item {
+  color: rgb(139, 18, 107);
 }
-h1 {
+
+@media screen and (max-width: 991px)
+/*HOME BUTTONS*/
+/*
+.col1 {
+  font-size: 40px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: 50px;
+  margin-bottom: 10px;
+}
+.sbutt {
+  background-color:rgb(139, 133, 18);
+  border-radius: 6px;
+  padding: 22px 22px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 8px 20px;
+  margin-top: 40px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  width: 500px;
+  height: 400px;
+}
+.sbutt :hover {
+  background: rgb(4, 34, 4);
+  opacity: .3;
+}
+h2 {
+  color:rgb(139, 133, 18);
   font-size: 50px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-align: center;
 }
-.school-btns p, .personal-btns p {
-  font-size: 20px;
+.col2 {
+  font-size: 40px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  text-align: center;
-}
-ul {
-  display: block;
-  list-style-type: disc;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
-}
+  margin-left: 50px;
+  margin-bottom: 50px;
+}*/
+
+
+/*ANIMATION*/
+
+
+
+
+
+/*GRAPHIC DESIGN*/
+
+
+
+
 
 /*Home Buttons + Logo
 .logo {
