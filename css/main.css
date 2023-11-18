@@ -443,18 +443,64 @@ postcard {
 .bg-elephant {
   border: 3px solid rgb(139, 133, 18);
   border-radius: 5px;
+  margin-top: 20px;
 }
 .elephants {
   border-radius: 10px;
+  padding: 10px;
 }
 .elephant-row-one {
   display: flex;
+  border-radius: 10px;
+  padding: 20px;
 }
 .elephant-row-two {
   display: flex;
+  border-radius: 10px;
+  padding: 20px;
 }
-
-
+img.line, img.sketch, img.stiple, img.shape, img.environment, img.heat {
+  padding: 5px;
+  border-radius: 10px;
+}
+.drawn-elephant-title {
+  color: rgb(139, 18, 107);
+  font-size: 50px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: 40px;
+  margin-top: 0;
+  margin-bottom: 0;
+  letter-spacing: 3px;
+  font-weight: 500;
+  line-height: 1;
+}
+.drawn-title-sub {
+  color: rgb(139, 18, 107);
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: 40px;
+  margin-top: 0;
+  margin-bottom: 0;
+  /letter-spacing: 3px;
+  font-weight: 500;
+  line-height: 1;
+}
+.drawn-elephants {
+  color: white;
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.geo-elephant-title {
+  color: rgb(139, 18, 107);
+  font-size: 50px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: 40px;
+}
+.geo-elephants {
+  color: white;
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
 .hawaii-heading {
   text-align: center;
