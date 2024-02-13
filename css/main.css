@@ -384,6 +384,7 @@ postcard-gallery {
   box-sizing: border-box;
   margin-top: 50px;
   margin-bottom: 50px;
+  margin-right: 20px;
 }
 .postcard {
   color:  rgb(255, 255, 255);
@@ -432,6 +433,9 @@ postcard-gallery {
 }
 img.postcard {
   border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .postcard-objective-title {
   font-size: 30px;
@@ -583,6 +587,7 @@ hawaii-gallery {
   box-sizing: border-box;
   margin-top: 50px;
   margin-bottom: 50px;
+  margin-right: 20px;
 }
 .hawaii {
   color:  rgb(255, 255, 255);
@@ -631,6 +636,9 @@ hawaii-gallery {
 }
 img.hawaii {
   border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .hawaii-objective-title {
   font-size: 30px;
@@ -682,6 +690,9 @@ king-gallery {
   box-sizing: border-box;
   margin-top: 50px;
   margin-bottom: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .king {
   color:  rgb(255, 255, 255);
@@ -730,6 +741,9 @@ king-gallery {
 }
 img.king {
   border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .king-objective-title {
   font-size: 30px;
@@ -779,6 +793,9 @@ itmfl-gallery {
   box-sizing: border-box;
   margin-top: 50px;
   margin-bottom: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .itmfl {
   color:  rgb(255, 255, 255);
@@ -826,7 +843,9 @@ itmfl-gallery {
 }
 img.itmfl {
   border-radius: 10px;
-  margin-top: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .itmfl-objective-title {
   font-size: 30px;
