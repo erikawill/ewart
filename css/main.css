@@ -85,7 +85,6 @@ body{
   justify-content: space-between;
   color: rgb(255, 255, 255);
   margin-right: 20px;
-  letter-spacing: 2px;
 }
 
 .sr-only {
@@ -198,7 +197,7 @@ h2 {
   padding-right: 20px;
 }
 .art-list-title {
-  font-size: 50px;
+  font-size: 45px;
   color:   rgb(139, 18, 107);
   line-height: 1.2;
   text-align: center;
@@ -342,6 +341,73 @@ h2 {
   opacity: 1;
 }
 
+/*INFINITE SCROLL*/
+logo-slider {
+   
+  $min-image-size: 50px;
+  $max-image-size: 100px;
+  
+  --image-size: #{$max-image-size};
+  
+  border: 1px solid rgb(139, 133, 18);
+  border-radius: 5px;
+  padding: 20px;
+  overflow: hidden;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;	
+	position: relative;
+	display: flex;
+
+	&:hover div {
+		animation-play-state: paused;
+	}
+	
+	div { 
+		display: flex;
+		position: relative;
+		animation: marquee 30s linear infinite;
+    justify-content: space-around;
+    
+    // Debug: This is just to help see where the loop happens
+    // &:nth-of-type(1) { &, img { border:1px dashed red;  }}
+    // &:nth-of-type(2) { &, img { border:1px dashed blue; }}
+    
+    // You may need this if there are too few images for the banner width
+    //min-width:100%;
+    
+	}
+		
+	.boards {
+		display: block;
+		min-width: var(--image-size);
+		height: 500px;
+		margin: 0 1vw;
+	}
+  
+  &:after {
+		content: "";
+		position: absolute;
+		width: 200%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		background: linear-gradient(to right, white, rgba(white, 0) 80px, rgba(white, 0) calc(100% - 80px), white);
+	}
+  
+  @media (max-width:900px) {
+    --image-size: #{$min-image-size};
+    --image-size: min(max(#{$min-image-size}, 10vw), #{$max-image-size});
+	}
+
+}
+
+@keyframes marquee {
+	0%   { transform: translateX(0%); }
+	100% { transform: translateX(-100%); }
+}
+
+
 /*ANIMATION*/
 /*DIGITAL ILLUSTRATIONS*/
 /*DRAWINGS*/
@@ -354,13 +420,6 @@ h2 {
 }
 
 /*POSTCARD + STAMP*/
-postcard-gallery {
-  grid-column-gap: 0.5px;
-  grid-row-gap: 0.5px;
-  flex-wrap: wrap;
-  margin-top: 1px;
-  display: flex;
-}
 .postcard-list {
   font-size: 20px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -406,7 +465,7 @@ postcard-gallery {
 .postcard-title {
   color:  rgb(255, 255, 255);
   display: block;
-  font-size: 25px;
+  font-size: 20px;
   letter-spacing: 2px;
   margin-bottom: 10px;
 }
@@ -430,12 +489,6 @@ postcard-gallery {
 .postcard-tag-item {
   color: rgb(139, 18, 107);
 }
-img.postcard {
-  border-radius: 10px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
 .postcard-objective-title {
   font-size: 30px;
   font-family: 'Mulish', sans-serif;
@@ -455,13 +508,21 @@ img.postcard {
   padding-left: 20px;
   padding-right: 20px;
 }
+
+/*POSTCARD IMAGE*/
+img.postcard {
+  border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .postcard-link-title {
   color: rgb(139, 18, 107);
   font-size: 30px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   letter-spacing: 3px;
   margin-top: 20px;
-  /margin-bottom: 10px;
   padding-left: 20px;
   padding-right: 20px;  
 }
@@ -470,28 +531,6 @@ img.postcard {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   padding-left: 20px;
   padding-right: 20px;
-}
-elephant-gallery {
-  display: block;
-  grid-column-gap: 2px;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 2px;
-  grid-row-gap: 4px;
-  column-count: 2;
-  column-rule-width: 0px;
-  box-sizing: border-box;
-  font-size: 20px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  margin-left: 20px;
-  margin-bottom: 50px;
-}
-ellie {
-  font-size: 50px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  margin-top: 20px;
-  margin-left: 40px;
-  margin-bottom: 10px;
-  color: rgb(139, 18, 107);
 }
 .bg-elephant {
   border: 3px solid rgb(139, 133, 18);
@@ -547,13 +586,6 @@ img.line, img.sketch, img.stiple, img.shape, img.environment, img.heat {
 }
 
 /*HAWAII TRAVEL POSTER + AD*/
-hawaii-gallery {
-  grid-column-gap: 0.5px;
-  grid-row-gap: 0.5px;
-  flex-wrap: wrap;
-  margin-top: 1px;
-  display: flex;
-}
 .hawaii-list {
   font-size: 20px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -599,7 +631,7 @@ hawaii-gallery {
 .hawaii-title {
   color:  rgb(255, 255, 255);
   display: block;
-  font-size: 25px;
+  font-size: 20px;
   letter-spacing: 2px;
   margin-bottom: 10px;
 }
@@ -623,12 +655,6 @@ hawaii-gallery {
 .hawaii-tag-item {
   color: rgb(139, 18, 107);
 }
-img.hawaii {
-  border-radius: 10px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
 .hawaii-objective-title {
   font-size: 30px;
   font-family: 'Mulish', sans-serif;
@@ -649,19 +675,18 @@ img.hawaii {
   padding-right: 20px;
 }
 
+/*HAWAII IMAGE*/
+img.hawaii {
+  border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /*HISTORICAL FIGURE PROJECT*/
-king-gallery {
-  grid-column-gap: 0.5px;
-  grid-row-gap: 0.5px;
-  flex-wrap: wrap;
-  margin-top: 1px;
-  display: flex;
-}
 .king-list {
   font-size: 20px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  /margin-left: 20px;
   margin-bottom: 10px;
 }
 .king-item {
@@ -704,7 +729,7 @@ king-gallery {
 .king-title {
   color:  rgb(255, 255, 255);
   display: block;
-  font-size: 25px;
+  font-size: 20px;
   letter-spacing: 2px;
   margin-bottom: 10px;
 }
@@ -729,12 +754,6 @@ king-gallery {
 .king-tag-item {
   color: rgb(139, 18, 107);
 }
-img.king {
-  border-radius: 10px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
 .king-objective-title {
   font-size: 30px;
   font-family: 'Mulish', sans-serif;
@@ -754,18 +773,20 @@ img.king {
   padding-left: 20px;
   padding-right: 20px;
 }
-/*ITMFL MOVIE POSTER*/
-itmfl-gallery {
-  grid-column-gap: 0.5px;
-  grid-row-gap: 0.5px;
-  flex-wrap: wrap;
-  margin-top: 1px;
-  display: flex;
+
+/*KING TUT IMAGE*/
+img.king {
+  border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+
+/*ITMFL MOVIE POSTER*/
 .itmfl-list {
   font-size: 20px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  /margin-left: 20px;
   margin-bottom: 10px;
 }
 .itmfl-item {
@@ -808,7 +829,7 @@ itmfl-gallery {
 .itmfl-title {
   color:  rgb(255, 255, 255);
   display: block;
-  font-size: 25px;
+  font-size: 20px;
   letter-spacing: 2px;
   margin-bottom: 10px;
 }
@@ -832,12 +853,6 @@ itmfl-gallery {
 .itmfl-tag-item {
   color: rgb(139, 18, 107);
 }
-img.itmfl {
-  border-radius: 10px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
 .itmfl-objective-title {
   font-size: 30px;
   font-family: 'Mulish', sans-serif;
@@ -858,73 +873,411 @@ img.itmfl {
   padding-right: 20px;
 }
 
-logo-slider {
-   
-  $min-image-size: 50px;
-  $max-image-size: 100px;
-  
-  --image-size: #{$max-image-size};
-  
-  border: 1px solid rgb(139, 133, 18);
-  border-radius: 5px;
-  padding: 20px;
-  overflow: hidden;
-  max-width: 900px;
-  width: 100%;
-  margin: 0 auto;	
-	position: relative;
-	display: flex;
-
-	&:hover div {
-		animation-play-state: paused;
-	}
-	
-	div { 
-		display: flex;
-		position: relative;
-		animation: marquee 30s linear infinite;
-    justify-content: space-around;
-    
-    // Debug: This is just to help see where the loop happens
-    // &:nth-of-type(1) { &, img { border:1px dashed red;  }}
-    // &:nth-of-type(2) { &, img { border:1px dashed blue; }}
-    
-    // You may need this if there are too few images for the banner width
-    //min-width:100%;
-    
-	}
-		
-	.boards {
-		display: block;
-		min-width: var(--image-size);
-		height: 500px;
-		margin: 0 1vw;
-	}
-  
-  &:after {
-		content: "";
-		position: absolute;
-		width: 200%;
-		height: 100%;
-		left: 0;
-		top: 0;
-		background: linear-gradient(to right, white, rgba(white, 0) 80px, rgba(white, 0) calc(100% - 80px), white);
-	}
-  
-  @media (max-width:900px) {
-    --image-size: #{$min-image-size};
-    --image-size: min(max(#{$min-image-size}, 10vw), #{$max-image-size});
-	}
-
+/*ITMFL IMAGE*/
+img.itmfl {
+  border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
 }
 
-@keyframes marquee {
-	0%   { transform: translateX(0%); }
-	100% { transform: translateX(-100%); }
-}
 
 /*PHOTOGRAPHY*/
+.padding-global {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+
+/*A DAY AT THE PARK*/
+.park-list, .cats-list, .lights-list, .bo-list, .flo-list, .sunny-list, .campus-list, .levee-list, .food-list, .sheldon-list {
+  margin-bottom: 10px;
+  margin-top: 30px;
+  text-align: center;
+}
+.park-item, .cats-item, .lights-item, .bo-item, .flo-item, .sunny-item, .campus-item, .levee-item, .food-item, .sheldon-item {
+  display: inline-block;
+  overflow: hidden;
+  padding: 20px;
+}
+.park, .cats, .lights, .bo, .flo, .sunny, .campus, .levee, .food, .sheldon {
+  color:  rgb(255, 255, 255);
+  font-size: 60px;
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.horse {
+  color:  rgb(255, 255, 255);
+  font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.park-title-wrapper, .cats-title-wrapper, .lights-title-wrapper, .bo-title-wrapper, .flo-title-wrapper, .sunny-title-wrapper, .campus-title-wrapper, 
+.levee-title-wrapper, .food-title-wrapper, .sheldon-title-wrapper {
+  padding-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.park-list-title, .cats-list-title, .lights-list-title, .bo-list-title, .flo-list-title, .sunny-list-title, .campus-list-title, .levee-list-title,
+.food-list-title, .sheldon-list-title {
+  font-size: 40px;
+  color:   rgb(139, 18, 107);
+  line-height: 1.2;
+  letter-spacing: 2px;
+}
+.park-title, .cats-title, .lights-title, .bo-title, .flo-title, .sunny-title, .campus-title, .levee-title, .food-title, .sheldon-title {
+  color:  rgb(255, 255, 255);
+  display: block;
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+.park-tag-list, .cats-tag-list, .lights-tag-list, .bo-tag-list, .flo-tag-list, .sunny-tag-list, .campus-tag-list, .levee-tag-list, .food-tag-list,
+.sheldon-tag-list {
+  grid-column-gap: 10px;
+  grid-row-gap: 0.5px;
+  flex-wrap: wrap;
+  margin-top: 1px;
+  display: flex;
+  font-family: 'Oswald', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+.park-tag-item, .cats-tag-item, .lights-tag-item, .bo-tag-item, .flo-tag-item, .sunny-tag-item, .campus-tag-item, .levee-tag-item, .food-tag-item,
+.sheldon-tag-item {
+  background-color: rgba(249, 250, 245, .13);
+  border-radius: 15px;
+  padding: 10px 10.5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  text-decoration: none;
+}
+.park-tag-item, .cats-tag-item, .lights-tag-item, .bo-tag-item, .flo-tag-item, .sunny-tag-item, .campus-tag-item, .levee-tag-item, .food-tag-item,
+.sheldon-tag-item {
+  color: rgb(139, 18, 107);
+}
+.park-objective-title, .cats-objective-title, .lights-objective-title, .bo-objective-title, .flo-objective-title, .sunny-objective-title,
+.campus-objective-title, .levee-objective-title, .food-objective-title, .sheldon-objective-title {
+  font-size: 30px;
+  font-family: 'Mulish', sans-serif;
+  color: rgb(139, 18, 107);
+  letter-spacing: 3px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 50px;
+}
+.park-sub, .cats-sub, .lights-sub, .bo-sub, .flo-sub, .sunny-sub, .campus-sub, .levee-sub, .food-sub, .sheldon-sub {
+  font-size: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+  margin-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+/*ITMFL IMAGE*/
+imgparkpic {
+  border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+
 /*TYPOGRAPHY*/
+.padding-global {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+/*NOMENCLATURE BOOK*/
+nomen-gallery {
+  grid-column-gap: 0.5px;
+  grid-row-gap: 0.5px;
+  flex-wrap: wrap;
+  margin-top: 1px;
+  display: flex;
+}
+.nomen-list {
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-bottom: 10px;
+}
+.nomen-item {
+  border: 3px solid rgb(139, 133, 18);
+  border-radius: 5px;
+  display: inline-block;
+  overflow: hidden;
+  display: block;
+  grid-column-gap: 2px;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2px;
+  grid-row-gap: 4px;
+  column-count: 2;
+  column-rule-width: 0px;
+  box-sizing: border-box;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.nomen {
+  color:  rgb(255, 255, 255);
+  font-size: 40px;
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.nomen-title-wrapper {
+  padding-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.nomen-list-title {
+  font-size: 40px;
+  color:   rgb(139, 18, 107);
+  line-height: 1.2;
+  letter-spacing: 2px;
+}
+.nomen-title {
+  color:  rgb(255, 255, 255);
+  display: block;
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+.nomen-tag-list {
+  grid-column-gap: 10px;
+  grid-row-gap: 0.5px;
+  flex-wrap: wrap;
+  margin-top: 1px;
+  display: flex;
+  font-family: 'Oswald', sans-serif;
+}
+.nomen-tag-item {
+  background-color: rgba(249, 250, 245, .13);
+  border-radius: 15px;
+  padding: 10px 10.5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  text-decoration: none;
+}
+.nomen-tag-item {
+  color: rgb(139, 18, 107);
+}
+.nomen-objective-title {
+  font-size: 30px;
+  font-family: 'Mulish', sans-serif;
+  color: rgb(139, 18, 107);
+  letter-spacing: 3px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 50px;
+}
+.nomen-sub {
+  font-size: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+  margin-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/*NOMENCLATURE BOOK IMAGE*/
+.nomenclature {
+  padding-left: 150px;
+}
+
+/*NOMENCLATURE PAGE SPREADS*/
+.bg-nomen {
+  border: 3px solid rgb(139, 133, 18);
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.nomen {
+  border-radius: 10px;
+  padding: 10px;
+}
+.nomen-row {
+  display: flex;
+  border-radius: 10px;
+  padding: 20px;
+}
+img.nomen1 {
+  padding: 5px;
+  border-radius: 10px;
+}
+.nomen-page-title {
+  color: rgb(139, 18, 107);
+  font-size: 40px;
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  letter-spacing: 3px;
+  font-weight: 500;
+  line-height: 1;
+}
+.nomen-page {
+  color: white;
+  font-size: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding-bottom: 5px;
+  padding-left: 20px;
+}
+
+/*PAUL RAND BOOK*/
+paul-gallery {
+  grid-column-gap: 0.5px;
+  grid-row-gap: 0.5px;
+  flex-wrap: wrap;
+  margin-top: 1px;
+  display: flex;
+}
+.paul-list {
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-bottom: 10px;
+}
+.paul-item {
+  border: 3px solid rgb(139, 133, 18);
+  border-radius: 5px;
+  display: inline-block;
+  overflow: hidden;
+  display: block;
+  grid-column-gap: 2px;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2px;
+  grid-row-gap: 4px;
+  column-count: 2;
+  column-rule-width: 0px;
+  box-sizing: border-box;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.paul {
+  color:  rgb(255, 255, 255);
+  font-size: 60px;
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.paul-title-wrapper {
+  padding-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.paul-list-title {
+  font-size: 40px;
+  color:   rgb(139, 18, 107);
+  line-height: 1.2;
+  letter-spacing: 2px;
+}
+.paul-title {
+  color:  rgb(255, 255, 255);
+  display: block;
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+.paul-tag-list {
+  grid-column-gap: 10px;
+  grid-row-gap: 0.5px;
+  flex-wrap: wrap;
+  margin-top: 1px;
+  display: flex;
+  font-family: 'Oswald', sans-serif;
+}
+.paul-tag-item {
+  background-color: rgba(249, 250, 245, .13);
+  border-radius: 15px;
+  padding: 10px 10.5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  text-decoration: none;
+}
+.paul-tag-item {
+  color: rgb(139, 18, 107);
+}
+.paul-objective-title {
+  font-size: 30px;
+  font-family: 'Mulish', sans-serif;
+  color: rgb(139, 18, 107);
+  letter-spacing: 3px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 50px;
+}
+.paul-sub {
+  font-size: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+  margin-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/*PAUL RAND BOOK IMAGE*/
+.paulrand {
+  padding-left: 150px;
+}
+
+/*PAUL RAND PAGE SPREADS*/
+.bg-paul {
+  border: 3px solid rgb(139, 133, 18);
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.paul {
+  border-radius: 10px;
+  padding: 10px;
+}
+.paul-row {
+  display: flex;
+  border-radius: 10px;
+  padding: 20px;
+  margin-left: 60px;
+}
+img.paul1 {
+  padding: 5px;
+  border-radius: 10px;
+}
+.paul-page-title {
+  color: rgb(139, 18, 107);
+  font-size: 40px;
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  letter-spacing: 3px;
+  font-weight: 500;
+  line-height: 1;
+}
+.paul-page {
+  color: white;
+  font-size: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding-bottom: 5px;
+  padding-left: 20px;
+}
 
 
 /* Desktop Styles 
