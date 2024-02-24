@@ -422,9 +422,55 @@ logo-slider {
 
 
 /*ANIMATION*/
-/*DIGITAL ILLUSTRATIONS*/
-/*DRAWINGS*/
+.ani-gallery {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+.ani-item {
+  padding: 4%;
+}
 
+
+/*DIGITAL ILLUSTRATIONS*/
+
+/*THE KITTY KOLLECTION*/
+.digi-gallery {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  border: 3px solid rgb(139, 133, 18);
+  border-radius: 5px;
+}
+.digi-item {
+  padding: 2%;
+}
+.sklabel {
+  background-color:  rgb(139, 18, 107);
+  border-radius: 2%;
+  width: 25%;
+  color: white;
+}
+.kitty-pre {
+  text-align: center;
+  color: rgb(139, 133, 18);
+  font-size: 100px;
+  font-family: 'Montserrat', sans-serif;
+}
+.sk-title {}
+/*IMAGES*/
+.skv1 {}
+
+
+/*DRAWINGS*/
+.draw-gallery {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+.draw-item {
+  padding: 4%;
+}
 
 /*GRAPHIC DESIGN*/
 .padding-global {
@@ -906,7 +952,7 @@ img.itmfl {
 /*A DAY AT THE PARK*/
 .park-list, .cats-list, .lights-list, .bo-list, .flo-list, .sunny-list, .campus-list, .levee-list, .food-list, .sheldon-list {
   margin-bottom: 10px;
-  margin-top: 30px;
+  margin-top: 10px;
   text-align: center;
 }
 .park-item, .cats-item, .lights-item, .bo-item, .flo-item, .sunny-item, .campus-item, .levee-item, .food-item, .sheldon-item {
@@ -992,16 +1038,6 @@ img.itmfl {
   margin-right: 10px;
   padding-left: 20px;
   padding-right: 20px;
-}
-
-
-/*ITMFL IMAGE*/
-imgparkpic {
-  border-radius: 10px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 40px;
 }
 
 
