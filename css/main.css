@@ -402,7 +402,6 @@ h2 {
   opacity: 1;
 }
 
-/*PHOTO SLIDER*/
 
 /*INFINITE SCROLL*/
 logo-slider {
@@ -416,7 +415,7 @@ logo-slider {
   border-radius: 5px;
   padding: 20px;
   overflow: hidden;
-  max-width: 1000px;
+  max-width: 1300px;
   width: 100%;
   margin: 0 auto;	
 	position: relative;
@@ -433,8 +432,8 @@ logo-slider {
     justify-content: space-around;
     
     // Debug: This is just to help see where the loop happens
-    // &:nth-of-type(1) { &, img { border:1px dashed red;  }}
-    // &:nth-of-type(2) { &, img { border:1px dashed blue; }}
+     &:nth-of-type(1) { &, img { border:1px dashed red;  }}
+     &:nth-of-type(2) { &, img { border:1px dashed blue; }}
     
     // You may need this if there are too few images for the banner width
     //min-width:100%;
@@ -467,7 +466,7 @@ logo-slider {
 
 @keyframes marquee {
 	0%   { transform: translateX(0%); }
-	100% { transform: translateX(-100%); }
+	100% { transform: translateX(-50%); }
 }
 
 
@@ -485,6 +484,9 @@ logo-slider {
 /*DIGITAL ILLUSTRATIONS*/
 
 /*THE KITTY KOLLECTION*/
+.digital {
+  margin-top: 50px;
+}
 .digi-gallery {
   display: grid;
   grid-gap: 20px;
@@ -498,12 +500,14 @@ logo-slider {
 .sklabel {
   background-color:  rgb(139, 18, 107);
   border-radius: 2%;
-  width: 25%;
+  width: 35%;
   color: white;
 }
 .kitty-pre {
   text-align: center;
-  color: rgb(139, 133, 18);
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color:  rgb(139, 133, 18);
+  -webkit-text-fill-color: white;
   font-size: 100px;
   font-family: 'Montserrat', sans-serif;
 }
@@ -993,17 +997,14 @@ img.itmfl {
 
 
 /*PHOTOGRAPHY*/
-.padding-global {
-  padding-left: 2%;
-  padding-right: 2%;
-}
 
+/*PHOTO SLIDER*/
 
 /*A DAY AT THE PARK*/
 .park-list, .cats-list, .lights-list, .bo-list, .flo-list, .sunny-list, .campus-list, .levee-list, .food-list, .sheldon-list {
   margin-bottom: 10px;
   margin-top: 10px;
-  text-align: center;
+  /text-align: center;
 }
 .park-item, .cats-item, .lights-item, .bo-item, .flo-item, .sunny-item, .campus-item, .levee-item, .food-item, .sheldon-item {
   display: inline-block;
@@ -1012,7 +1013,7 @@ img.itmfl {
 }
 .park, .cats, .lights, .bo, .flo, .sunny, .campus, .levee, .food, .sheldon {
   color:  rgb(255, 255, 255);
-  font-size: 60px;
+  font-size: 40px;
   font-family: 'Montserrat', sans-serif;
   margin-left: 10px;
   margin-bottom: 10px;
@@ -1052,8 +1053,8 @@ img.itmfl {
   margin-top: 1px;
   display: flex;
   font-family: 'Oswald', sans-serif;
-  display: flex;
-  justify-content: center;
+  /display: flex;
+  /justify-content: center;
 }
 .park-tag-item, .cats-tag-item, .lights-tag-item, .bo-tag-item, .flo-tag-item, .sunny-tag-item, .campus-tag-item, .levee-tag-item, .food-tag-item,
 .sheldon-tag-item {
