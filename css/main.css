@@ -8,23 +8,19 @@ body{
   background-color: rgb(4, 34, 4);
   border: 2px solid;
   color:rgb(139, 133, 18);
-  width: auto;
-  display: block;
+  /display: block;
   -webkit-text-size-adjust: 100%;
 }
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: inline-block;
+  /display: flex;
+  /justify-content: space-between;
+  /align-items: center;
   -webkit-text-size-adjust: 100%;
-  margin-left: 25px;
-  margin-right: 25px;
-  margin-bottom: 25px;
 }
 .logo {
   width: 20%;
   height: 10%;
-  padding: 10px;
 }
 .button {
   border: 2px solid;
@@ -99,32 +95,9 @@ body{
   clip-path: inset(50%);
   border: 0;
 }
-/*BUTTONS*/
-.heart-gallery {
-  display: grid;
-  grid-gap: 30px;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  margin-bottom: 30px;
-  margin-left: 20px;
-  margin-right: 20px;
-  font-family: 'Oswald', sans-serif;
-}
-.heart-item {}
-.heartbtn {}
-.heart-title-wrapper {
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-.heart-title {
-  font-size: 45px;
-  color:   rgb(139, 18, 107);
-  line-height: 1.2;
-  text-align: center;
-}
 
 
-/*HOME INTRO + BUTTONS*/
+/*HOME INTRO*/
 .intro-wrapper {
   font-size: 30px;
   font-family: 'Montserrat', sans-serif;
@@ -148,6 +121,71 @@ body{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin-left: 10px;
 }
+
+
+
+/*BUTTONS*/
+main{
+  padding-bottom: 12%;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1.5rem 1fr 1.5rem 1fr 1.5rem 1fr 1.5rem 1fr 1.5rem 1fr;
+  grid-template-columns: repeat(6, 1fr);
+  grid-row-gap: 1.5rem;
+  grid-column-gap: 1.5rem;
+  /margin: auto;
+}
+.project-grid {
+  -ms-grid-column: 1;
+  grid-column-start: 1;
+  -ms-grid-column-span: 7;
+  grid-column-end: span 7;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2rem 1fr 2rem 1fr 2rem 1fr 2rem 1fr 2rem 1fr;
+  grid-template-columns: repeat(6, 1fr);
+  grid-row-gap: 15rem;
+  grid-column-gap: 2rem;
+  margin: 6rem auto;
+}
+a:hover {
+  -webkit-filter: brightness(1.09);
+  filter: brightness(1.09);
+}
+.project-grid a {
+  -ms-grid-column-span: 2;
+  grid-column: span 2;
+  min-height: 56.25%;
+  text-decoration: none;
+}
+.project-grid a h3 {
+  font-size: 2.15rem;
+  margin: 1.25rem 0;
+  font-family: 'Mulish', sans-serif;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color:  rgb(4, 34, 4);
+  -webkit-text-fill-color: white;
+}
+.project-grid a p {
+  font-size: 1.5rem;
+  color: lightgrey;
+  font-family: 'Mulish', sans-serif;
+}
+.project-grid a img {
+  margin-bottom: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+
+/* FORMER BUTTONS*/
 .art {
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color:  rgb(139, 18, 107);
@@ -193,7 +231,7 @@ h2 {
 }
 .art-item {
   background-color:  rgb(4, 34, 4);
-  border: 3px solid rgb(139, 133, 18);
+  /border: 3px solid rgb(139, 133, 18);
   border-radius: 5px;
   display: inline-block;
   overflow: hidden;
@@ -221,9 +259,19 @@ h2 {
 }
 .art-list-title {
   font-size: 45px;
-  color:   rgb(139, 18, 107);
+  /color:   rgb(139, 133, 18);
   line-height: 1.2;
   text-align: center;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color:   rgb(139, 133, 18);;
+  -webkit-text-fill-color: white;
+  color: white;
+  text-shadow:
+      3px 3px 0   rgb(139, 133, 18),
+    -1px -1px 0   rgb(139, 133, 18),  
+     1px -1px 0   rgb(139, 133, 18),
+     -1px 1px 0   rgb(139, 133, 18),
+      1px 1px 0   rgb(139, 133, 18);
 }
 h3 {
   margin-top: 20px;
@@ -353,6 +401,8 @@ h2 {
 .stt:active {
   opacity: 1;
 }
+
+/*PHOTO SLIDER*/
 
 /*INFINITE SCROLL*/
 logo-slider {
