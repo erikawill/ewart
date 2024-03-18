@@ -475,6 +475,9 @@ h2 {
 .skv1 {}
 
 
+
+
+
 /*DRAWINGS*/
 .draw-gallery {
   display: grid;
@@ -484,6 +487,10 @@ h2 {
 .draw-item {
   padding: 4%;
 }
+
+
+
+
 
 /*GRAPHIC DESIGN*/
 .padding-global {
@@ -953,6 +960,28 @@ img.itmfl {
   margin-right: auto;
   margin-bottom: 40px;
 }
+
+/*ITMFL MOODBOARDS*/
+.itmfl-container {
+  border: 3px solid rgb(139, 133, 18);
+  border-radius: 5px;
+  display: inline-block;
+  overflow: hidden;
+  display: block;
+  grid-column-gap: 2px;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2px;
+  grid-row-gap: 4px;
+  column-count: 2;
+  column-rule-width: 0px;
+  box-sizing: border-box;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 
 /*PHOTOGRAPHY*/
