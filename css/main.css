@@ -322,13 +322,11 @@ font-family: 'Montserrat', sans-serif;
 background-color: rgb(255, 169, 241);
 }
 .parkGallery1,
-.parkGallery2,
-.parkGallery3 {
-padding: 2%;
-}
 .parkGallery2 {
-display: flex;
-justify-content: center;
+padding: 2%;
+display: grid;
+/grid-gap: 10px;
+grid-template-columns: auto auto;
 }
 
 /*TYPOGRAPHY*/
