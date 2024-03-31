@@ -193,6 +193,7 @@ text-align: left;
 .bottom-pre, .bottom-next {
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 font-size: 30px;
+letter-spacing: 1px;
 }
 
 /*SCROLL TO TOP BUTTON*/
@@ -295,7 +296,12 @@ padding: 4%;
 .ani-titles {
 color: white;
 font-family: 'Montserrat', sans-serif;
+font-size: 20px;
 margin-left: 3%;
+margin-right: 25%;
+/height: 8%;
+background-color: rgb(255, 169, 241);
+border-radius: 5px;
 }
 .anivid-gallery {
 display: flex;
@@ -308,18 +314,26 @@ padding: 4%;
 color: white;
 font-family: 'Montserrat', sans-serif;
 margin-left: 10%;
-font-size: large;
+margin-right: 10%;
+font-size: 25px;
+background-color: rgb(255, 169, 241);
+text-align: center;
 }
 
 /*DIGITAL ILLUSTRATIONS*/
 /*DRAWING*/
 /*GRAPHIC DESIGN*/
 /*PHOTOGRAPHY*/
+.photoBubble {
+  padding: 2%;
+  background-color: rgb(255, 169, 241);
+  border-radius: 50%;
+  width: 40%;
+}
 .photoTitle {
-padding: 2%;
 color: white;
 font-family: 'Montserrat', sans-serif;
-background-color: rgb(255, 169, 241);
+text-align: center;
 }
 .parkGallery1, .parkGallery2,
 .catsGallery1, .catsGallery2,
@@ -334,11 +348,13 @@ grid-template-columns: auto auto;
   padding: 1%;
   margin-left: 50%;
 }
-.lightsGallery1 {
+.lightsGallery1,
+.leveeGallery1 {
   padding: 1%;
   margin-left: 6%;
 }
-.boGallery1 {
+.boGallery1,
+.foodGallery1 {
   padding: 1%;
   margin-left: 12%;
   display: grid;
@@ -365,5 +381,20 @@ grid-template-columns: auto auto;
   grid-gap: 5px;
   grid-template-columns: auto auto auto;
 }
+.sheldonGallery1 {
+  padding: 1%;
+  margin-left: 15%;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: auto auto;
+}
+.sheldonGallery2 {
+  padding: 1%;
+  margin-left: 5%;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: auto auto auto;
+}
+
 /*TYPOGRAPHY*/
 /**/
