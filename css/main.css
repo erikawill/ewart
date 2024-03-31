@@ -160,20 +160,22 @@ border-radius: 5px;
 padding-left: 1%;
 padding-right: 1%;
 padding-top: 10%;
--webkit-text-size-adjust: 100%;
 }
 .np-left {
 float: left;
 width: 33.333%;
+-webkit-text-size-adjust: 100%;
 }
 .heart-center {
 display: inline-block;
 width: 33.333%; 
 text-align: center;
+-webkit-text-size-adjust: 100%;
 }
 .np-right {
 float: right;
 width: 33.333%;
+-webkit-text-size-adjust: 100%;
 }
 .ani, .digi, .draw, .gd, .photo, .type {
 color: rgb(241, 0, 177);
@@ -285,32 +287,31 @@ padding-top: 2%;
 
                     /*PAGES*/
 /*ANIMATION*/
-.ani-gallery {
+.aniGallery {
 display: grid;
 grid-gap: 20px;
 grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
-.ani-item {
+.aniItem {
 padding: 4%;
 }
-.ani-titles {
+.aniTitles {
 color: white;
 font-family: 'Montserrat', sans-serif;
 font-size: 20px;
 margin-left: 3%;
 margin-right: 25%;
-/height: 8%;
 background-color: rgb(255, 169, 241);
 border-radius: 5px;
 }
-.anivid-gallery {
+.anividGallery {
 display: flex;
 justify-content: center;
 }
-.anivid-item {
+.anividItem {
 padding: 4%;
 }
-.anivid-titles {
+.anividTitles {
 color: white;
 font-family: 'Montserrat', sans-serif;
 margin-left: 10%;
@@ -321,7 +322,47 @@ text-align: center;
 }
 
 /*DIGITAL ILLUSTRATIONS*/
+.natureGallery {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: auto auto auto;
+}
+.natureImage {
+  padding: 4%;
+}
+.natureTitle {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  margin-left: 3%;
+  margin-right: 25%;
+  background-color: rgb(255, 169, 241);
+  border-radius: 5px;
+}
 /*DRAWING*/
+.drawingGallery1 {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  margin-left: 8%;
+}
+.drawingGallery {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+.drawingImage {
+  padding: 4%;
+}
+.drawingTitle {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  margin-left: 3%;
+  margin-right: 25%;
+  background-color: rgb(255, 169, 241);
+  border-radius: 5px;
+}
 /*GRAPHIC DESIGN*/
 /*PHOTOGRAPHY*/
 .photoBubble {
