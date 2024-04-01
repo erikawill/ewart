@@ -371,6 +371,85 @@ padding: 1%;
   padding: 1%;
 }
 /*GRAPHIC DESIGN*/
+.elephantGallery, .hawaiiGallery, .tutGallery, .moodGallery {
+  padding: 2%;
+}
+.elephantTitle, .hawaiiTitle, .tutTitle, .moodTitle {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 55px;
+  background-color: rgb(255, 169, 241);
+  border-radius: 5px;
+  margin-right: 50%;
+  padding: 0.5%;
+}
+.elephantDate, .hawaiiDate, .tutDate, .moodDate {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+.elephant2Gallery, .hawaii2Gallery, .tut2Gallery, .mood2Gallery {
+  display: grid;
+  grid-template-columns: 25% 25%;
+  margin-left: 4%;
+  margin-top: 20px;
+}
+.elephant2Title, .hawaii2Title, .tut2Title, .mood2Title {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+}
+.elephantSub, .hawaiiSub, .tutSub, .moodSub {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+}
+.elephant3Title, .hawaii3Title, .tut3Title, .mood3Title {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+}
+.elephantInfo, .hawaiiInfo, .tutInfo, .moodInfo {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+}
+.elephant, .hawaii, .tut, .mood {
+  padding: 2%;
+  text-align: center;
+}
+.pageElephant {
+  margin-left: 2%;
+}
+.esTitle {
+  color:rgb(255, 169, 241);
+  background-color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 35px;
+  margin-right: 50%;
+  border-radius: 5px;
+  padding: 1%;
+  margin-bottom: 20px;
+}
+.esSub {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  margin-left: 1.5%;
+  margin-right: 25%;
+}
+.elephantPics {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 25% 25% 25%;
+  margin-top: 20px;
+}
+.ellies {
+  display: block;
+  margin-left: 50%;
+  margin-right: 50%;
+}
 /*PHOTOGRAPHY*/
 .photoBubble {
   padding: 2%;
@@ -397,13 +476,11 @@ grid-template-columns: auto auto;
   padding: 2%;
   margin-left: 50%;
 }
-.lightsGallery1,
-.leveeGallery1 {
+.lightsGallery1, .leveeGallery1 {
   padding: 2%;
   margin-left: 6%;
 }
-.boGallery1,
-.foodGallery1 {
+.boGallery1, .foodGallery1 {
   padding: 2%;
   display: grid;
   grid-gap: 5px;
@@ -442,12 +519,10 @@ grid-template-columns: auto auto;
   grid-template-columns: auto auto auto;
 }
 /*TYPOGRAPHY*/
-.nomenGallery,
-.paulGallery {
+.nomenGallery, .paulGallery {
   padding: 2%;
 }
-.nomenTitle,
-.paulTitle {
+.nomenTitle, .paulTitle {
   color: white;
   font-family: 'Montserrat', sans-serif;
   font-size: 55px;
@@ -456,56 +531,47 @@ grid-template-columns: auto auto;
   margin-right: 50%;
   padding: 0.5%;
 }
-.nomenDate,
-.paulDate {
+.nomenDate, .paulDate {
   color: white;
   font-family: 'Montserrat', sans-serif;
   font-size: 45px;
   margin-bottom: 20px;
 }
-.nomenSGallery,
-.paulSGallery {
+.nomenSGallery, .paulSGallery {
   display: grid;
   grid-template-columns: 25% 25%;
   margin-left: 0.5%;
   margin-top: 20px;
 }
-.nomenSub,
-.paulSub {
+.nomenSub, .paulSub {
   color: white;
   font-family: 'Montserrat', sans-serif;
   font-size: 25px;
 }
-.nomen3,
-.paul3 {
+.nomen3, .paul3 {
   color: white;
   font-family: 'Montserrat', sans-serif;
   font-size: 15px;
 }
-.nomenITitle,
-.paulITitle {
+.nomenITitle, .paulITitle {
   color: white;
   font-family: 'Montserrat', sans-serif;
   font-size: 25px;
 }
-.nomenInfo,
-.paulInfo {
+.nomenInfo, .paulInfo {
   color: white;
   font-family: 'Montserrat', sans-serif;
   font-size: 15px;
 }
-.nomen,
-.paul {
+.nomen, .paul {
   padding: 2%;
   display: flex;
   justify-content: center;
 }
-.pageNomen,
-.pagePaul {
+.pageNomen, .pagePaul {
   padding: 2%;
 }
-.nomenMain,
-.paulMain {
+.nomenMain, .paulMain {
   color:rgb(255, 169, 241);
   background-color: white;
   font-family: 'Montserrat', sans-serif;
@@ -515,16 +581,14 @@ grid-template-columns: auto auto;
   padding: 1%;
   margin-bottom: 20px;
 }
-.nomenMain2,
-.paulMain2 {
+.nomenMain2, .paulMain2 {
   color: white;
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   margin-left: 0.5%;
   margin-right: 55%;
 }
-.nomenPages,
-.paulPages {
+.nomenPages, .paulPages {
 text-align: center;
 }
 /**/
