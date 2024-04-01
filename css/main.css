@@ -303,6 +303,7 @@ margin-left: 3%;
 margin-right: 25%;
 background-color: rgb(255, 169, 241);
 border-radius: 5px;
+padding: 1%;
 }
 .anividGallery {
 display: flex;
@@ -319,6 +320,8 @@ margin-right: 10%;
 font-size: 25px;
 background-color: rgb(255, 169, 241);
 text-align: center;
+border-radius: 5px;
+padding: 1%;
 }
 
 /*DIGITAL ILLUSTRATIONS*/
@@ -338,13 +341,13 @@ text-align: center;
   margin-right: 25%;
   background-color: rgb(255, 169, 241);
   border-radius: 5px;
+  padding: 1%;
 }
 /*DRAWING*/
 .drawingGallery1 {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  margin-left: 8%;
 }
 .drawingGallery {
   display: grid;
@@ -362,6 +365,7 @@ text-align: center;
   margin-right: 25%;
   background-color: rgb(255, 169, 241);
   border-radius: 5px;
+  padding: 1%;
 }
 /*GRAPHIC DESIGN*/
 /*PHOTOGRAPHY*/
@@ -376,28 +380,28 @@ color: white;
 font-family: 'Montserrat', sans-serif;
 text-align: center;
 }
+.park, .cats, .lights, .bo, .sunny, .campus, .levee, .food, .sheldon {
+  padding: 2%;
+}
 .parkGallery1, .parkGallery2,
 .catsGallery1, .catsGallery2,
 .sunnyGallery1, .sunnyGallery2 {
-padding: 1%;
-margin-left: 3%;
 display: grid;
 grid-gap: 5px;
 grid-template-columns: auto auto;
 }
 .sunnyGallery3 {
-  padding: 1%;
+  padding: 2%;
   margin-left: 50%;
 }
 .lightsGallery1,
 .leveeGallery1 {
-  padding: 1%;
+  padding: 2%;
   margin-left: 6%;
 }
 .boGallery1,
 .foodGallery1 {
-  padding: 1%;
-  margin-left: 12%;
+  padding: 2%;
   display: grid;
   grid-gap: 5px;
   grid-template-columns: auto auto;
@@ -409,33 +413,115 @@ grid-template-columns: auto auto;
   grid-template-columns: auto auto auto auto;
 }
 .campusGallery1 {
-  padding: 1%;
+  padding: 2%;
   margin-left: 15%;
   display: grid;
   grid-gap: 5px;
   grid-template-columns: auto auto;
 }
 .campusGallery2 {
-  padding: 1%;
+  padding: 2%;
   margin-left: 3%;
   display: grid;
   grid-gap: 5px;
   grid-template-columns: auto auto auto;
 }
 .sheldonGallery1 {
-  padding: 1%;
-  margin-left: 15%;
+  padding: 2%;
   display: grid;
   grid-gap: 5px;
   grid-template-columns: auto auto;
 }
 .sheldonGallery2 {
-  padding: 1%;
-  margin-left: 5%;
+  padding: 2%;
   display: grid;
   grid-gap: 5px;
   grid-template-columns: auto auto auto;
 }
-
 /*TYPOGRAPHY*/
+.nomenGallery,
+.paulGallery {
+  padding: 2%;
+}
+.nomenTitle,
+.paulTitle {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 55px;
+  background-color: rgb(255, 169, 241);
+  border-radius: 5px;
+  margin-right: 50%;
+  padding: 0.5%;
+}
+.nomenDate,
+.paulDate {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+.nomenSGallery,
+.paulSGallery {
+  display: grid;
+  grid-template-columns: 25% 25%;
+  margin-left: 0.5%;
+  margin-top: 20px;
+}
+.nomenSub,
+.paulSub {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+}
+.nomen3,
+.paul3 {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+}
+.nomenITitle,
+.paulITitle {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+}
+.nomenInfo,
+.paulInfo {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+}
+.nomen,
+.paul {
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+}
+.pageNomen,
+.pagePaul {
+  padding: 2%;
+}
+.nomenMain,
+.paulMain {
+  color:rgb(255, 169, 241);
+  background-color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 35px;
+  margin-right: 50%;
+  border-radius: 5px;
+  padding: 1%;
+  margin-bottom: 20px;
+}
+.nomenMain2,
+.paulMain2 {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  margin-left: 0.5%;
+  margin-right: 55%;
+}
+.nomenPages,
+.paulPages {
+text-align: center;
+}
 /**/
