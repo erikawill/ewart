@@ -240,10 +240,12 @@ opacity: 1;
 .footer-wrapper{
   padding-top: 150px;
   max-width: auto;
-  width: auto;
-  height: 150px;
+  width: 100%;
+  height: 80%;
   font-size: 18px;
   font-family: 'Oswald', sans-serif;
+  display: grid;
+  grid-template-columns: 100% 100% 100%;
 }
 .social-links {
   display: flex;
@@ -266,8 +268,9 @@ opacity: 1;
 .footer{
   display: flex;
   justify-content: space-between;
-  color: rgb(255, 255, 255);
+  color: rgb(241, 0, 177);
   padding: 4%;
+  background-color: white;
 }
 .copyright {
 padding-top: 2%;
