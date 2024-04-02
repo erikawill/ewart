@@ -399,11 +399,13 @@ padding: 1%;
   color: white;
   font-family: 'Montserrat', sans-serif;
   font-size: 25px;
+  padding-bottom: 4px;
 }
 .elephantSub, .hawaiiSub, .tutSub, .moodSub {
   color: white;
   font-family: 'Montserrat', sans-serif;
   font-size: 15px;
+  padding-bottom: 4px;
 }
 .elephant3Title, .hawaii3Title, .tut3Title, .mood3Title {
   color: white;
@@ -419,10 +421,10 @@ padding: 1%;
   padding: 2%;
   text-align: center;
 }
-.pageElephant {
+.pageElephant, .pageTut, .pageMood {
   margin-left: 2%;
 }
-.esTitle {
+.esTitle, .tsTitle, .msTitle {
   color:rgb(255, 169, 241);
   background-color: white;
   font-family: 'Montserrat', sans-serif;
@@ -432,7 +434,7 @@ padding: 1%;
   padding: 1%;
   margin-bottom: 20px;
 }
-.esSub {
+.esSub, .tsSub, .msSub {
   color: white;
   font-family: 'Montserrat', sans-serif;
   font-size: 25px;
@@ -443,12 +445,31 @@ padding: 1%;
   display: grid;
   grid-gap: 5px;
   grid-template-columns: 25% 25% 25%;
-  margin-top: 20px;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 .ellies {
   display: block;
   margin-left: 50%;
   margin-right: 50%;
+}
+.moodPics, .tutPics {
+  justify-content: center;
+  align-items: center;
+  display:flex;
+  padding-top: 5%;
+}
+.moodlove {
+  transition: transform .2s;
+  margin: 10px; auto;
+  /background-color: rgb(173, 173, 237);
+}
+.king {
+  transition: transform .2s;
+  margin: 25px; auto;
+}
+.moodlove:hover, .king:hover{
+  transform:scale(2);
 }
 /*PHOTOGRAPHY*/
 .photoBubble {
@@ -547,11 +568,13 @@ grid-template-columns: auto auto;
   color: white;
   font-family: 'Montserrat', sans-serif;
   font-size: 25px;
+  padding-bottom: 4px;
 }
 .nomen3, .paul3 {
   color: white;
   font-family: 'Montserrat', sans-serif;
   font-size: 15px;
+  padding-bottom: 4px;
 }
 .nomenITitle, .paulITitle {
   color: white;
