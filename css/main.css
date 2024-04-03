@@ -2,6 +2,8 @@
 body {
   background-color: rgb(236, 200, 253);
   background-size: 1400px;
+  background-image: url(../img/graffiti\ heart\ border.png);
+  background-postion: center;
   background-repeat: no-repeat;
 }
 
@@ -59,12 +61,10 @@ text-shadow:
 
 /*PAGE BTNS*/
 .page-wrapper {
--webkit-text-size-adjust: 100%;
-padding: 7%;
+padding: 5%;
 }
 .page-nav {
-display: flex;
-justify-content: center;
+
 }
 .pagebtn {
 border: 2px solid;
@@ -75,12 +75,12 @@ text-decoration: none;
 display: inline-block;
 font-size: 45px;
 font-family: 'Oswald', sans-serif;
-margin: 6px 20px;
+margin: 6px 10px;
 transition-duration: 0.4s;
 cursor: pointer;
--webkit-text-stroke-width: 1px;
--webkit-text-stroke-color:  white;
--webkit-text-fill-color:  rgb(241, 0, 177);
+/-webkit-text-stroke-width: 1px;
+/-webkit-text-stroke-color:  white;
+/-webkit-text-fill-color:  rgb(241, 0, 177);
 }
 .pagebtn:hover {
 background-color: rgb(241, 0, 177);
@@ -275,6 +275,7 @@ opacity: 1;
 .copyright {
 padding-top: 2%;
 }
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -290,43 +291,133 @@ padding-top: 2%;
 
                     /*PAGES*/
 /*ANIMATION*/
-.aniGallery {
+
+.column,
+.aColumn {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+/* Clear floats after the columns */
+.row:after,
+.aRow::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column3 {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+.row3::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+* {
+  box-sizing: border-box;
+}
+
+.aGallery {
+  display: grid;
+  grid-template-columns: 35% 25%;
+  margin-left: 4%;
+  margin-top: 50px;
+}
+.aTitle {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  margin-right: 40%;
+  /padding: 0.5%;
+  padding-top: 10%;
+}
+.aSub {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  padding-bottom: 4px;
+}
+.a2Title {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  padding-bottom: 4px;
+}
+.aVideo {
+  margin-right: 40%;
+  margin-top: 5%
+  padding: 0.5%;
+}
+
+
+
+aDate {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+a2Title {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  padding-bottom: 4px;
+}
+aniGallery {
 display: grid;
 grid-gap: 20px;
 grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
-.aniItem {
+aniItem {
 padding: 4%;
 }
-.aniTitles {
+aniTitles {
 color: white;
 font-family: 'Montserrat', sans-serif;
-font-size: 20px;
+font-size: 35px;
 margin-left: 3%;
 margin-right: 25%;
 background-color: rgb(255, 169, 241);
 border-radius: 5px;
 padding: 1%;
 }
-.anividGallery {
+atSub {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  margin-left: 4%;
+  margin-right: 25%;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 25% 25%;
+  /margin-left: 4%;
+  /margin-top: 20px;
+}
+anividGallery {
 display: flex;
 justify-content: center;
 }
-.anividItem {
+anividItem {
 padding: 4%;
 }
-.anividTitles {
+anividTitles {
 color: white;
 font-family: 'Montserrat', sans-serif;
 margin-left: 10%;
 margin-right: 10%;
 font-size: 25px;
-background-color: rgb(255, 169, 241);
+/background-color: rgb(255, 169, 241);
 text-align: center;
 border-radius: 5px;
 padding: 1%;
 }
-
+atPic{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 30%;
+}
 /*DIGITAL ILLUSTRATIONS*/
 .natureGallery {
   display: grid;
