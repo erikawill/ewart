@@ -2,7 +2,7 @@
 body {
   background-color: rgb(236, 200, 253);
   background-size: 1400px;
-  background-image: url(../img/graffiti\ heart\ border.png);
+  /background-image: url(../img/graffiti\ heart\ border.png);
   background-postion: center;
   background-repeat: no-repeat;
 }
@@ -15,6 +15,9 @@ body {
 .header {
   display: inline-block;
   -webkit-text-size-adjust: 100%;
+}
+.logo:hover {
+  filter: drop-shadow(4px 8px 8px rgb(241, 0, 177));
 }
 .main-nav {
   text-align: right;
@@ -38,33 +41,63 @@ body {
 }
 .mainbtn:hover {
   background-color: rgb(241, 0, 177);
+  filter: drop-shadow(4px 8px 8px rgb(241, 0, 177));
 }
 
 /*HOME INTRO*/
 .intro-wrapper {
 font-size: 30px;
 font-family: 'Montserrat', sans-serif;
-margin-left: 10px;
+margin-left: 20px;
+margin-top: 20%;
 }
 .intro-heading, .head-intro {
--webkit-text-stroke-width: 2px;
--webkit-text-stroke-color:   rgb(241, 0, 177);
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color:   rgb(255, 169, 241);
 -webkit-text-fill-color: white;
 color: white;
 text-shadow:
-    3px 3px 0   rgb(241, 0, 177),
-  -1px -1px 0   rgb(241, 0, 177),  
-   1px -1px 0   rgb(241, 0, 177),
-   -1px 1px 0   rgb(241, 0, 177),
-    1px 1px 0   rgb(241, 0, 177);
+    3px 3px 0   rgb(255, 169, 241),
+  -1px -1px 0   rgb(255, 169, 241),  
+   1px -1px 0   rgb(255, 169, 241),
+   -1px 1px 0   rgb(255, 169, 241),
+    1px 1px 0   rgb(255, 169, 241);
 }
+
+/*WELCOME*/
+.welcomeWrapper {
+  margin-left: 4%;
+  margin-right: 4%;
+  padding: 2%;
+}
+.welcome {
+  padding: 2%;
+  font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  background-color: rgb(241, 0, 177);
+  border-radius: 15px;
+}
+
 
 /*PAGE BTNS*/
 .page-wrapper {
-padding: 5%;
+  -webkit-text-size-adjust: 100%;
+  padding: 2%;
+  display: grid;
+  grid-template-columns: 80% 70%;
+  margin-top: 20px;
+  margin-left: 20%;
 }
-.page-nav {
-
+.columnBtn {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+.rowBtn::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 .pagebtn {
 border: 2px solid;
@@ -73,22 +106,20 @@ color: white;
 padding: 16px 32px;
 text-decoration: none;
 display: inline-block;
-font-size: 45px;
+font-size: 35px;
 font-family: 'Oswald', sans-serif;
 margin: 6px 10px;
 transition-duration: 0.4s;
 cursor: pointer;
-/-webkit-text-stroke-width: 1px;
-/-webkit-text-stroke-color:  white;
-/-webkit-text-fill-color:  rgb(241, 0, 177);
 }
 .pagebtn:hover {
 background-color: rgb(241, 0, 177);
+filter: drop-shadow(4px 8px 8px rgb(241, 0, 177));
 }
 
 /*LINK HIGHLIGHT*/
 a:hover {
-filter: drop-shadow(4px 8px 8px rgb(241, 0, 177));
+/filter: drop-shadow(4px 8px 8px rgb(241, 0, 177));
 /-webkit-filter: brightness(2.06);
 /filter: brightness(1.06);
 }
@@ -177,7 +208,7 @@ border-radius: 5px;
   color: rgb(241, 0, 177);
   }
 .heart-center {
-  margin-left: 130px;
+  margin-left: 140px;
 }
   .top-pre, .top-next {
   font-family: 'Oswald', sans-serif;
@@ -247,12 +278,16 @@ opacity: 1;
   display: grid;
   grid-template-columns: 100% 100% 100%;
 }
+.footer-logo {
+  padding-top: 1%;
+}
 .social-links {
   display: flex;
   gap: 10px;
+  padding-top: 2%;
 }
 .social-link:hover {
-  color: rgb(241, 0, 177);
+  filter: drop-shadow(4px 8px 8px rgb(149, 0, 241));
 }
 .social-link-image {
   padding: 10px;
@@ -265,7 +300,7 @@ opacity: 1;
   margin-left: auto;
   margin-right: auto;
   -webkit-text-size-adjust: 100%;
-  background-color: rgb(255, 169, 241);
+  background-color: rgb(236, 200, 253);
 }
 /*COPYRIGHT + NAME*/
 .footer{
@@ -334,24 +369,49 @@ padding-top: 2%;
   margin-top: 50px;
 }
 .aTitle {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color:   white;
+  -webkit-text-fill-color: white;
   color: white;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 25px;
-  margin-right: 40%;
-  /padding: 0.5%;
-  padding-top: 10%;
+  text-shadow:
+      3px 3px 0    rgb(255, 169, 241),
+    -1px -1px 0    rgb(255, 169, 241),  
+     1px -1px 0    rgb(255, 169, 241),
+     -1px 1px 0    rgb(255, 169, 241),
+      1px 1px 0    rgb(255, 169, 241);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    padding: 0.5%;
 }
 .aSub {
-  color: white;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 15px;
-  padding-bottom: 4px;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color:   rgb(255, 169, 241);
+  -webkit-text-fill-color: rgb(255, 169, 241);
+  color: rgb(255, 169, 241);
+  text-shadow:
+      3px 3px 0   rgb(241, 0, 177),
+    -1px -1px 0   rgb(241, 0, 177),  
+     1px -1px 0   rgb(241, 0, 177),
+     -1px 1px 0   rgb(241, 0, 177),
+      1px 1px 0   rgb(241, 0, 177);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    padding-bottom: 4px;
 }
-.a2Title {
+.avTitle {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color:   white;
+  -webkit-text-fill-color: white;
   color: white;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 25px;
-  padding-bottom: 4px;
+  text-shadow:
+      3px 3px 0    rgb(255, 169, 241),
+    -1px -1px 0    rgb(255, 169, 241),  
+     1px -1px 0    rgb(255, 169, 241),
+     -1px 1px 0    rgb(255, 169, 241),
+      1px 1px 0    rgb(255, 169, 241);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    padding: 0.5%;
 }
 .aVideo {
   margin-right: 40%;
@@ -370,15 +430,22 @@ padding-top: 2%;
   padding: 4%;
 }
 .natureTitle {
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color:   white;
+  -webkit-text-fill-color: white;
   color: white;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
-  margin-left: 3%;
-  margin-right: 25%;
-  background-color: rgb(255, 169, 241);
-  border-radius: 5px;
-  padding: 1%;
+  text-shadow:
+      3px 3px 0    rgb(255, 169, 241),
+    -1px -1px 0    rgb(255, 169, 241),  
+     1px -1px 0    rgb(255, 169, 241),
+     -1px 1px 0    rgb(255, 169, 241),
+      1px 1px 0    rgb(255, 169, 241);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    padding: 0.5%;
 }
+
+
 /*DRAWING*/
 .drawingGallery1 {
   display: grid;
@@ -394,18 +461,25 @@ padding-top: 2%;
   padding: 4%;
 }
 .drawingTitle {
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color:   white;
+  -webkit-text-fill-color: white;
   color: white;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
-  margin-left: 3%;
-  margin-right: 25%;
-  background-color: rgb(255, 169, 241);
-  border-radius: 5px;
-  padding: 1%;
+  text-shadow:
+      3px 3px 0    rgb(255, 169, 241),
+    -1px -1px 0    rgb(255, 169, 241),  
+     1px -1px 0    rgb(255, 169, 241),
+     -1px 1px 0    rgb(255, 169, 241),
+      1px 1px 0    rgb(255, 169, 241);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    padding: 0.5%;
 }
+
+
 /*GRAPHIC DESIGN*/
 .elephantTitle {
--webkit-text-stroke-width: 2px;
+-webkit-text-stroke-width: 1px;
 -webkit-text-stroke-color:   white;
 -webkit-text-fill-color: white;
 color: white;
@@ -468,6 +542,7 @@ text-shadow:
   font-size: 15px;
   padding-top: 5px;
   padding-bottom: 10px;
+  /text-transform: uppercase;
 }
 .elephant {
   padding: 10%;
@@ -501,7 +576,7 @@ text-shadow:
 
 
 .hawaiiTitle {
--webkit-text-stroke-width: 2px;
+-webkit-text-stroke-width: 1px;
 -webkit-text-stroke-color:   white;
 -webkit-text-fill-color: white;
 color: white;
@@ -571,7 +646,7 @@ text-shadow:
 
 
 .tutTitle {
--webkit-text-stroke-width: 2px;
+-webkit-text-stroke-width: 1px;
 -webkit-text-stroke-color:   white;
 -webkit-text-fill-color: white;
 color: white;
@@ -672,7 +747,7 @@ text-shadow:
 
 
 .moodTitle {
--webkit-text-stroke-width: 2px;
+-webkit-text-stroke-width: 1px;
 -webkit-text-stroke-color:   white;
 -webkit-text-fill-color: white;
 color: white;
@@ -762,7 +837,7 @@ text-shadow:
 
 
 .sequenceTitle {
--webkit-text-stroke-width: 2px;
+-webkit-text-stroke-width: 1px;
 -webkit-text-stroke-color:   white;
 -webkit-text-fill-color: white;
 color: white;
