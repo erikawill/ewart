@@ -117,75 +117,6 @@ background-color: rgb(241, 0, 177);
 filter: drop-shadow(4px 8px 8px rgb(241, 0, 177));
 }
 
-/*LINK HIGHLIGHT*/
-a:hover {
-/filter: drop-shadow(4px 8px 8px rgb(241, 0, 177));
-/-webkit-filter: brightness(2.06);
-/filter: brightness(1.06);
-}
-/*
-main{
-padding-bottom: 12%;
-padding-left: 1%;
-padding-right: 1%;
-}
-.grid {
-display: -ms-grid;
-display: grid;
--ms-grid-columns: 1fr 1.5rem 1fr 1.5rem 1fr 1.5rem 1fr 1.5rem 1fr 1.5rem 1fr;
-grid-template-columns: repeat(6, 1fr);
-grid-row-gap: 1.5rem;
-grid-column-gap: 1.5rem;
-/margin: auto;
-}
-.project-grid {
--ms-grid-column: 1;
-grid-column-start: 1;
--ms-grid-column-span: 7;
-grid-column-end: span 7;
-display: -ms-grid;
-display: grid;
--ms-grid-columns: 1fr 2rem 1fr 2rem 1fr 2rem 1fr 2rem 1fr 2rem 1fr;
-grid-template-columns: repeat(6, 1fr);
-grid-row-gap: 15rem;
-grid-column-gap: 2rem;
-margin: 6rem auto;
-border: 2px solid;
-border-radius: 5px;
-color: white;
-}
-a:hover {
--webkit-filter: brightness(1.09);
-filter: brightness(1.09);
-}
-.project-grid a {
--ms-grid-column-span: 2;
-grid-column: span 2;
-min-height: 56.25%;
-text-decoration: none;
-}
-.project-grid a h1 {
-font-size: 2.15rem;
-margin: 1.25rem 0;
-font-family: 'Mulish', sans-serif;
--webkit-text-stroke-width: 1px;
--webkit-text-stroke-color:  white;
--webkit-text-fill-color:  rgb(241, 0, 177);
-}
-.project-grid a p {
-font-size: 1.5rem;
-color: lightgrey;
-font-family: 'Mulish', sans-serif;
-}
-.project-grid a img {
-margin-bottom: 0;
--o-object-fit: cover;
-object-fit: cover;
-width: 100%;
-height: 100%;
-border-radius: 5px;
-}
-*/
 
 /*NEXT/PREVIOUS BUTTONS*/
 .npContainer {
@@ -330,6 +261,75 @@ padding-top: 2%;
   -webkit-clip-path: inset(50%);
   clip-path: inset(50%);
   border: 0;
+}
+
+/*ABOUT PAGE*/
+.aboutTitle {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color:   white;
+  -webkit-text-fill-color: white;
+  color: white;
+  text-shadow:
+      3px 3px 0    rgb(255, 169, 241),
+    -1px -1px 0    rgb(255, 169, 241),  
+     1px -1px 0    rgb(255, 169, 241),
+     -1px 1px 0    rgb(255, 169, 241),
+      1px 1px 0    rgb(255, 169, 241);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100px;
+  padding: 2%;
+  text-align: center;
+}
+.aboutWrapper {
+  -webkit-text-size-adjust: 100%;
+  padding: 1.5%;
+  margin-top: 20px;
+  /display: grid;
+  /grid-template-columns: 110%;
+}
+.columnA {
+  float: left;
+  width: 33.33%;
+}
+.rowA::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.pageAbout {}
+.aboutPics {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-rows: 35% 35% 35%;
+  grid-template-columns: 105% 125% 130%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.aboutPics2 {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-rows: 25% 25% 25%;
+  grid-template-columns: 70% 160% 130%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.about {}
+.about1 {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 45px;
+  margin-top: 20px;
+}
+.about2 {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+}
+.about1, .about2 {
+  /margin-left: 12%;
+  /margin-right: 10%;
+  text-align: center;
+  line-height: 1.8
 }
 
                     /*PAGES*/
@@ -503,8 +503,7 @@ text-shadow:
   -webkit-text-size-adjust: 100%;
   padding: 2%;
   display: grid;
-  grid-template-columns: 35% 35%;
-  margin-top: 20px;
+  grid-template-columns: 50% 50%;
 }
 .columnE {
   float: left;
@@ -542,13 +541,19 @@ text-shadow:
   font-size: 15px;
   padding-top: 5px;
   padding-bottom: 10px;
-  /text-transform: uppercase;
 }
 .elephant {
   padding: 10%;
-  padding-left: 60%;
+  margin-left: 100%;
 }
 
+.elephant2Wrapper {
+  -webkit-text-size-adjust: 100%;
+  padding: 2%;
+  display: grid;
+  grid-template-columns: 35% 35%;
+  margin-top: 20px;
+}
 .pageElephant {
   margin-left: 20%;
 }
@@ -600,8 +605,7 @@ text-shadow:
   -webkit-text-size-adjust: 100%;
   padding: 2%;
   display: grid;
-  grid-template-columns: 35% 35%;
-  margin-top: 20px;
+  grid-template-columns: 50% 50%;
 }
 .columnH {
   float: left;
@@ -641,7 +645,7 @@ text-shadow:
   padding-bottom: 10px;
 }
 .hawaii {
-  padding-left: 10%;
+  margin-left: 100%;
 }
 
 
@@ -670,8 +674,7 @@ text-shadow:
   -webkit-text-size-adjust: 100%;
   padding: 2%;
   display: grid;
-  grid-template-columns: 35% 35%;
-  margin-top: 20px;
+  grid-template-columns: 50% 50%;
 }
 .columnT {
   float: left;
@@ -714,7 +717,12 @@ text-shadow:
   padding: 10%;
   padding-left: 60%;
 }
-
+.tut2Wrapper {
+  -webkit-text-size-adjust: 100%;
+  padding: 2%;
+  display: grid;
+  grid-template-columns: 40% 35%;
+}
 .pageTut {
   margin-left: 20%;
 }
@@ -771,8 +779,7 @@ text-shadow:
   -webkit-text-size-adjust: 100%;
   padding: 2%;
   display: grid;
-  grid-template-columns: 35% 35%;
-  margin-top: 20px;
+  grid-template-columns: 50% 50%;
 }
 .columnM {
   float: left;
@@ -815,7 +822,13 @@ text-shadow:
   padding: 10%;
   padding-left: 60%;
 }
-
+.mood2Wrapper {
+  -webkit-text-size-adjust: 100%;
+  padding: 2%;
+  display: grid;
+  grid-template-columns: 33% 35%;
+  margin-top: 20px;
+}
 .pageMood {
   margin-left: 20%;
 }
@@ -862,7 +875,6 @@ text-shadow:
   padding: 2%;
   display: grid;
   grid-template-columns: 35% 35%;
-  margin-top: 20px;
 }
 .columnS {
   float: left;
@@ -907,6 +919,44 @@ text-shadow:
 
 
 /*PHOTOGRAPHY*/
+.parkTitle, .catsTitle, .lightsTitle, .blueTitle, .flowerTitle, .sunnyTitle, .campusTitle, .leveeTitle,
+.foodTitle, .sheldonTitle {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color:   white;
+  -webkit-text-fill-color: white;
+color: white;
+text-shadow:
+    3px 3px 0    rgb(255, 169, 241),
+  -1px -1px 0    rgb(255, 169, 241),  
+   1px -1px 0    rgb(255, 169, 241),
+   -1px 1px 0    rgb(255, 169, 241),
+    1px 1px 0    rgb(255, 169, 241);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 55px;
+  padding: 0.5%;
+}
+.parkLocation, .catsLocation, .lightsLocation, .blueLocation, .flowerLocation, .sunnyLocation, .campusLocation,
+.leveeLocation, .foodLocation, .sheldonLocation {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+.parkDate, .catsDate, .lightsDate, .blueDate, .flowerDate, .sunnyDate, .campusDate, .leveeDate, .foodDate, .sheldonDate {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.sheldonSub {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  margin-bottom: 20px;
+  margin-right: 45%;
+}
+
+
+
+
+
 .photoBubble {
   padding: 2%;
   background-color: rgb(255, 169, 241);
@@ -921,7 +971,6 @@ text-align: center;
  .sunny, .campus, .levee, .food, .sheldon {
   padding: 2%;
 }
-
 .parkWrapper {
   padding: 2%;
   margin-left: 5%;
@@ -934,7 +983,6 @@ text-align: center;
   width: 33.33%;
   padding: 10px;
 }
-
 .columnPark2 {
   float: left;
   width: 33.33%;
@@ -950,7 +998,6 @@ text-align: center;
   display: table;
   clear: both;
 }
-
 .catsWrapper {
   padding: 2%;
   margin-left: 250px;
@@ -975,14 +1022,10 @@ text-align: center;
   display: table;
   clear: both;
 }
-
-
 .lightsWrapper {
   padding: 2%;
   margin-left: 10%;
 }
-
-
 .blueWrapper {
   padding: 2%;
   margin-left: 15%;
@@ -1005,8 +1048,6 @@ text-align: center;
   display: table;
   clear: both;
 }
-
-
 .sunnyWrapper {
   padding: 2%;
   margin-left: 350px;
@@ -1024,10 +1065,6 @@ text-align: center;
   display: table;
   clear: both;
 }
-
-
-
-
 .sunnyGallery1, .sunnyGallery2 {
 display: grid;
 grid-gap: 5px;
@@ -1079,18 +1116,26 @@ grid-template-columns: auto auto;
   grid-gap: 5px;
   grid-template-columns: auto auto auto;
 }
+
+
 /*TYPOGRAPHY*/
 .nomenGallery, .paulGallery {
   padding: 2%;
 }
 .nomenTitle, .paulTitle {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color:   white;
+  -webkit-text-fill-color: white;
   color: white;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 55px;
-  background-color: rgb(255, 169, 241);
-  border-radius: 5px;
-  margin-right: 50%;
-  padding: 0.5%;
+  text-shadow:
+      3px 3px 0    rgb(255, 169, 241),
+    -1px -1px 0    rgb(255, 169, 241),  
+     1px -1px 0    rgb(255, 169, 241),
+     -1px 1px 0    rgb(255, 169, 241),
+      1px 1px 0    rgb(255, 169, 241);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 55px;
+    padding: 0.5%;
 }
 .nomenDate, .paulDate {
   color: white;
@@ -1098,39 +1143,105 @@ grid-template-columns: auto auto;
   font-size: 45px;
   margin-bottom: 20px;
 }
-.nomenSGallery, .paulSGallery {
+
+.nomenWrapper {
+  -webkit-text-size-adjust: 100%;
+  padding: 2%;
   display: grid;
-  grid-template-columns: 25% 25%;
-  margin-left: 0.5%;
+  grid-template-columns: 35% 35%;
   margin-top: 20px;
 }
-.nomenSub, .paulSub {
-  color: white;
+.columnNo {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+.columnNo2 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+.rowNo::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.noTitle {
+  -webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color:   rgb(255, 169, 241);
+-webkit-text-fill-color: rgb(255, 169, 241);
+color: rgb(255, 169, 241);
+text-shadow:
+    3px 3px 0   rgb(241, 0, 177),
+  -1px -1px 0   rgb(241, 0, 177),  
+   1px -1px 0   rgb(241, 0, 177),
+   -1px 1px 0   rgb(241, 0, 177),
+    1px 1px 0   rgb(241, 0, 177);
   font-family: 'Montserrat', sans-serif;
   font-size: 25px;
   padding-bottom: 4px;
 }
-.nomen3, .paul3 {
+.noSub {
   color: white;
   font-family: 'Montserrat', sans-serif;
   font-size: 15px;
-  padding-bottom: 4px;
+  padding-top: 5px;
+  padding-bottom: 10px;
 }
-.nomenITitle, .paulITitle {
-  color: white;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 25px;
+.nomen {
+  padding: 10%;
+  margin-left: 300%;
 }
-.nomenInfo, .paulInfo {
-  color: white;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 15px;
-}
-.nomen, .paul {
+
+.paulWrapper {
+  -webkit-text-size-adjust: 100%;
   padding: 2%;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 35% 35%;
+  margin-top: 20px;
 }
+.columnPa {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+.columnPa2 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+.rowPa::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.paTitle {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color:   rgb(255, 169, 241);
+  -webkit-text-fill-color: rgb(255, 169, 241);
+  color: rgb(255, 169, 241);
+  text-shadow:
+      3px 3px 0   rgb(241, 0, 177),
+    -1px -1px 0   rgb(241, 0, 177),  
+     1px -1px 0   rgb(241, 0, 177),
+     -1px 1px 0   rgb(241, 0, 177),
+      1px 1px 0   rgb(241, 0, 177);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    padding-bottom: 4px;
+}
+.paSub {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+.paul {
+  padding: 10%;
+  margin-left: 300%;
+}
+
 .pageNomen, .pagePaul {
   padding: 2%;
 }
