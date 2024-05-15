@@ -81,6 +81,78 @@ text-shadow:
 
 
 /*PAGE BTNS*/
+.link-wrapper {
+  -webkit-text-size-adjust: 100%;
+  padding: 10%;
+}
+linknav {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.linkbtn {
+  text-decoration: none;
+}
+.linkbtn:hover {
+  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.34),0px 4px 8px 0px rgba(0,0,0,0.29);
+}
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-family: "Titillium Web", sans-serif;
+  margin: 6px 20px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  letter-spacing: 1px;
+  text-shadow: 2px 4px 4px rgb(255, 169, 241);
+  backdrop-filter: blur(10px);
+  z-index: 0;
+  overflow: hidden;
+  transition: box-shadow 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, border-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, transform 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, background-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s;
+  color: rgb(241, 0, 177);
+  background-color: rgba(255, 255, 255, 0.5);
+  border-width: 0px;
+  margin-bottom: 16px;
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 4px 8px 0px;
+  padding: 16px 32px;
+  line-height: 1.5;
+}
+.btn {
+  display: flex;
+  flex-direction: row;
+}
+.btn-image {
+  clip-path: circle(50%);
+  width: 5.5%;
+}
+.graphic-image {
+  border-radius: 50%;
+  width: 6%;
+}
+.btn-name {
+    text-align: center;
+    margin-left: 40%;
+}
+.digital-name {
+  text-align: center;
+  margin-left: 34%;
+}
+.graphic-name {
+  text-align: center;
+  margin-left: 37%;
+}
+.photo-name {
+  text-align: center;
+  margin-left: 38%;
+}
+.typo-name {
+  text-align: center;
+  margin-left: 39%;
+}
+
+
 .page-wrapper {
   -webkit-text-size-adjust: 100%;
   padding: 2%;
